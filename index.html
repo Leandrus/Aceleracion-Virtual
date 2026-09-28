@@ -4,10 +4,24 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Aceleración Virtual</title>
+  <title>Aceleración Virtual | Simuladores de Carreras y Branding de Motorsport</title>
 
-  <meta name="description" content="Potenciamos la presencia de tu marca con simulaciones de carreras y experiencias inmersivas e impactantes.">
-  <meta name="keywords" content="motorsport, simulación de carreras, branding, exhibición, automovilismo, marketing digital, adrenalina, velocidad, eventos">
+  <meta name="description"
+    content="Potenciamos la presencia de tu marca con simulaciones de carreras profesionales, exhibiciones interactivas y experiencias inmersivas de motorsport en Venezuela.">
+  <meta name="keywords"
+    content="motorsport, simulación de carreras, branding, exhibición, automovilismo, marketing digital, adrenalina, velocidad, eventos corporativos, simracing venezuela">
+  <meta name="author" content="Aceleración Virtual">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aceleracion-virtual.leandrus.net/">
+  <meta property="og:title" content="Aceleración Virtual | Simuladores de Carreras y Branding">
+  <meta property="og:description"
+    content="Potenciamos la presencia de tu marca con simulaciones de carreras y experiencias inmersivas e impactantes.">
+  <meta property="og:image" content="assets/img/logo-website.png">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -16,9 +30,10 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-	
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet">
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -29,44 +44,77 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Knight
-  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
-  * Updated: Oct 16 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+  <!-- Datos Estructurados del Negocio (Schema.org / JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Aceleración Virtual",
+    "image": "https://aceleracion-virtual.leandrus.net/assets/img/logo-website.png",
+    "url": "https://aceleracion-virtual.leandrus.net",
+    "telephone": "+584128590449",
+    "email": "contacto@leandrus.net",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle 13, entre Av. 20 y Av. 21",
+      "addressLocality": "Quíbor",
+      "addressRegion": "Lara",
+      "postalCode": "3061",
+      "addressCountry": "VE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 9.9298,
+      "longitude": -69.6201
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61576377377395",
+      "https://www.instagram.com/aceleracion_virtual",
+      "https://www.tiktok.com/@aceleracion_virtual"
+    ]
+  }
+  </script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // 1) Lista de imágenes a rotar
-    const images = [
-      'assets/img/stand_foto1.jpg',
-      'assets/img/stand_foto2.jpg',
-      'assets/img/stand_foto3.jpg',
-	  'assets/img/stand_foto4.jpg',
-	  'assets/img/stand_foto5.jpg'
-      // añade tantas rutas como necesites
-    ];
+  <!-- Script de Rotador de Imágenes Suave -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = [
+        'assets/img/stand_foto1.jpg',
+        'assets/img/stand_foto2.jpg',
+        'assets/img/stand_foto3.jpg',
+        'assets/img/stand_foto4.jpg',
+        'assets/img/stand_foto5.jpg'
+      ];
 
-    // 2) Estado inicial
-    let current = 0;
-    const imgEl = document.getElementById('about-rotator');
+      let current = 0;
+      const imgEl = document.getElementById('about-rotator');
+      if (!imgEl) return;
 
-    // 3) (Opcional) Pre-carga para que no parpadee
-    images.forEach(url => {
-      const img = new Image();
-      img.src = url;
+      // Pre-carga para evitar parpadeo
+      images.forEach(url => {
+        const img = new Image();
+        img.src = url;
+      });
+
+      // Rotación con transición suave usando clase fade-out
+      setInterval(() => {
+        imgEl.classList.add('fade-out');
+        setTimeout(() => {
+          current = (current + 1) % images.length;
+          imgEl.src = images[current];
+          imgEl.classList.remove('fade-out');
+        }, 500);
+      }, 6000);
     });
-
-    // 4) Función de rotación
-    setInterval(() => {
-      current = (current + 1) % images.length;
-      imgEl.src = images[current];
-    }, 6000); // 10 000 ms = 10 s
-  });
-</script>
+  </script>
+</head>
 
 <body class="index-page">
 
@@ -74,9 +122,7 @@
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt="" class="img-fluid mb-3"> -->
-		<img src="assets/img/logo_av_corto_fnegro.png" alt="">
+        <img src="assets/img/logo_av_corto_fnegro.png" alt="Aceleración Virtual">
         <h1 class="sitename">Aceleración Virtual</h1>
       </a>
 
@@ -85,42 +131,23 @@
           <li><a href="#hero" class="active">Inicio</a></li>
           <li><a href="#about">Nosotros</a></li>
           <li><a href="#services">Servicios</a></li>
-		  <!--
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-		  -->
           <li><a href="#pricing">Precios</a></li>
-		  <!--<li><a href="#avrt">AV-RT</a></li>-->
-		  <li><a href="#faq">Preguntas</a></li>
-          <!--
-		  <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-		  -->
+          <li><a href="#faq">Preguntas</a></li>
+          <li><a href="template_datos.html"><i class="bi bi-stopwatch text-danger me-1"></i>Tiempos</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
       <div class="header-social-links">
-        <a href="https://www.facebook.com/profile.php?id=61576377377395" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/aceleracion_virtual" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.tiktok.com/@aceleracion_virtual" class="tiktok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61576377377395" target="_blank" rel="noopener noreferrer"
+          class="facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/aceleracion_virtual" target="_blank" rel="noopener noreferrer"
+          class="instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com/@aceleracion_virtual" target="_blank" rel="noopener noreferrer" class="tiktok"
+          aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://wa.me/584128590449" target="_blank" rel="noopener noreferrer" class="whatsapp"
+          aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
       </div>
 
     </div>
@@ -150,7 +177,8 @@
       <!-- Section Title -->
       <div class="container section-title">
         <h2>¿Quiénes Somos?</h2>
-        <p>El grupo que transforma la adrenalina y velocidad del motorsport en experiencias inmersivas que potencian la presencia de tu marca.</p>
+        <p>El grupo que transforma la adrenalina y velocidad del motorsport en experiencias inmersivas que potencian la
+          presencia de tu marca.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -162,18 +190,27 @@
           <div class="col-lg-6 content">
             <h3>Adrenalina y presencia</h3>
             <p>
-			  En Aceleración Virtual, llevamos la emoción del automovilismo más allá de la pista. Diseñamos experiencias visuales y sensoriales que convierten la velocidad en un elemento clave e impactante para tu marca. Nos movemos por la pasión, la innovación y el impacto visual, construyendo exhibiciones que capturan miradas y generan conexiones genuinas.
+              En Aceleración Virtual, llevamos la emoción del automovilismo más allá de la pista. Diseñamos experiencias
+              visuales y sensoriales que convierten la velocidad en un elemento clave e impactante para tu marca. Nos
+              movemos por la pasión, la innovación y el impacto visual, construyendo exhibiciones que capturan miradas y
+              generan conexiones genuinas.
             </p>
             <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Experiencias inmersivas que generan impacto y conexión.</span></li>
-			  <li><i class="bi bi-check2-all"></i> <span>Branding visual potente para destacar tu marca.</span></li>
-			  <li><i class="bi bi-check2-all"></i> <span>Activaciones interactivas que atraen y fidelizan clientes.</span></li>
-			  <li><i class="bi bi-check2-all"></i> <span>Soluciones personalizadas para eventos y exhibiciones</span></li>
-			  <li><i class="bi bi-check2-all"></i> <span>Exposición optimizada para maximizar visibilidad.</span></li>
-			  <li><i class="bi bi-check2-all"></i> <span>Producción de contenido atractivo para redes y marketing.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Experiencias inmersivas que generan impacto y conexión.</span>
+              </li>
+              <li><i class="bi bi-check2-all"></i> <span>Branding visual potente para destacar tu marca.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Activaciones interactivas que atraen y fidelizan
+                  clientes.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Soluciones personalizadas para eventos y exhibiciones</span>
+              </li>
+              <li><i class="bi bi-check2-all"></i> <span>Exposición optimizada para maximizar visibilidad.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Producción de contenido atractivo para redes y
+                  marketing.</span></li>
             </ul>
             <p>
-              La presencia de tu marca no debe pasar desapercibida. En Aceleración Virtual, convertimos la velocidad y el impacto visual en herramientas clave para atraer, conectar y dejar una impresión duradera. Lleva tu marca al siguiente nivel con experiencias que aceleran resultados.
+              La presencia de tu marca no debe pasar desapercibida. En Aceleración Virtual, convertimos la velocidad y
+              el impacto visual en herramientas clave para atraer, conectar y dejar una impresión duradera. Lleva tu
+              marca al siguiente nivel con experiencias que aceleran resultados.
             </p>
           </div>
         </div>
@@ -189,7 +226,9 @@
       <!-- Section Title -->
       <div class="container section-title" style="padding-bottom: 10px;">
         <h2>Clientes y colaboraciones</h2>
-        <p>Hemos trabajado con marcas y empresas que han confiado en nuestra experiencia para llevar su presencia al mundo del motorsport virtual.</br>Cada evento ha sido una oportunidad para crear experiencias memorables y reforzar el impacto de su branding.</p>
+        <p>Hemos trabajado con marcas y empresas que han confiado en nuestra experiencia para llevar su presencia al
+          mundo del motorsport virtual.</br>Cada evento ha sido una oportunidad para crear experiencias memorables y
+          reforzar el impacto de su branding.</p>
       </div><!-- End Section Title -->
 
       <div class="container" style="padding-bottom: 10px;">
@@ -228,19 +267,27 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/c1-clc-ecuador.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/c2-colegio-aleman.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/c3-corp-maresa.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/c4-liquimoly.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/c5-mobil1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/c6-raul-coka.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/c7-servifreno.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/c8-triway.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/c1-clc-ecuador.png" class="img-fluid"
+                alt="Cliente CLC Ecuador"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/c2-colegio-aleman.png" class="img-fluid"
+                alt="Cliente Colegio Alemán"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/c3-corp-maresa.png" class="img-fluid"
+                alt="Cliente Corporación Maresa"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/c4-liquimoly.png" class="img-fluid"
+                alt="Cliente Liqui Moly"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/c5-mobil1.png" class="img-fluid"
+                alt="Cliente Mobil 1"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/c6-raul-coka.png" class="img-fluid"
+                alt="Cliente Raúl Coka"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/c7-servifreno.png" class="img-fluid"
+                alt="Cliente Servifreno"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/c8-triway.png" class="img-fluid"
+                alt="Cliente Triway"></div>
           </div>
         </div>
 
       </div>
-		
+
       <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
@@ -250,191 +297,152 @@
             <li data-filter=".filter-auto">Autos</li>
             <li data-filter=".filter-pista">Pistas</li>
             <li data-filter=".filter-game">General</li>
-			<li data-filter=".filter-video">videos</li>
+            <li data-filter=".filter-video">videos</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-auto">
-              <img src="assets/img/masonry-portfolio/auto1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/auto1.jpg" class="img-fluid" alt="Simulación Toyota Corolla 2021">
               <div class="portfolio-info">
                 <h4>Toyota Corolla 2021</h4>
-				<p>Potencia: 300 CV</p>
-				<p>Par motor: 249 Nm</p>
-				<p>Peso: 1200 kg</p>
-				<p>Velocidad máxima: 240 km/h</p>
-				<p>Aceleración de 0 a 100 km/h: 7 segundos</p>
-		<a href="assets/img/masonry-portfolio/auto1.jpg" title="" data-gallery="portfolio-gallery-auto" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>Potencia: 300 CV</p>
+                <p>Par motor: 249 Nm</p>
+                <p>Peso: 1200 kg</p>
+                <p>Velocidad máxima: 240 km/h</p>
+                <p>Aceleración de 0 a 100 km/h: 7 segundos</p>
+                <a href="assets/img/masonry-portfolio/auto1.jpg" title="Toyota Corolla 2021"
+                  data-gallery="portfolio-gallery-auto" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-auto">
-              <img src="assets/img/masonry-portfolio/auto2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/auto2.jpg" class="img-fluid" alt="Simulación Chevrolet Corsa 2000">
               <div class="portfolio-info">
                 <h4>Chevrolet Corsa 2000</h4>
-				<p>Potencia: 89 CV</p>
-				<p>Par motor: 125 Nm</p>
-				<p>Peso: 895 kg</p>
-				<p>Velocidad máxima: 182 km/h</p>
-				<p>Aceleración: 10,4 s (0-100 km/h)</p>
-                <a href="assets/img/masonry-portfolio/auto2.jpg" title="" data-gallery="portfolio-gallery-auto" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>Potencia: 89 CV</p>
+                <p>Par motor: 125 Nm</p>
+                <p>Peso: 895 kg</p>
+                <p>Velocidad máxima: 182 km/h</p>
+                <p>Aceleración: 10,4 s (0-100 km/h)</p>
+                <a href="assets/img/masonry-portfolio/auto2.jpg" title="Chevrolet Corsa 2000"
+                  data-gallery="portfolio-gallery-auto" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-			
-			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-auto">
-              <img src="assets/img/masonry-portfolio/auto3.jpg" class="img-fluid" alt="">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-auto">
+              <img src="assets/img/masonry-portfolio/auto3.jpg" class="img-fluid" alt="Simulación Ford Sierra Cosworth">
               <div class="portfolio-info">
                 <h4>Ford Sierra Cosworth</h4>
-				<p>Potencia: 222 CV</p>
-				<p>Par motor: 276 Nm</p>
-				<p>Peso: 1250 kg</p>
-				<p>Velocidad máxima: 245 km/h</p>
-				<p>Aceleración: 5,8s (0-100 km/h)</p>
-                <a href="assets/img/masonry-portfolio/auto3.jpg" title="" data-gallery="portfolio-gallery-auto" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-			
-			<!--
-			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-auto">
-              <img src="assets/img/masonry-portfolio/auto5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Chevrolet Impala</h4>
-				<p>Potencia: 182 CV</p>
-				<p>Par motor: 373 Nm</p>
-				<p>Peso: 1600 kg</p>
-				<p>Velocidad máxima: 210 km/h</p>
-				<p>Aceleración: 6,2 s (0-100 km/h)</p>
-                <a href="assets/img/masonry-portfolio/auto5.jpg" title="" data-gallery="portfolio-gallery-auto" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-			
-			<!--
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-auto">
-              <img src="assets/img/masonry-portfolio/auto2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Ford Fiesta 2017 (Rally)</h4>
-		<p>Potencia: 300 CV</p>
-		<p>Par motor: 450 Nm</p>
-		<p>Peso: 1360 kg</p>
-		<p>Velocidad máxima: 200 km/h</p>
-                <a href="assets/img/masonry-portfolio/auto2.jpg" title="" data-gallery="portfolio-gallery-auto" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>Potencia: 222 CV</p>
+                <p>Par motor: 276 Nm</p>
+                <p>Peso: 1250 kg</p>
+                <p>Velocidad máxima: 245 km/h</p>
+                <p>Aceleración: 5,8s (0-100 km/h)</p>
+                <a href="assets/img/masonry-portfolio/auto3.jpg" title="Ford Sierra Cosworth"
+                  data-gallery="portfolio-gallery-auto" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-			<!--
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-auto">
-              <img src="assets/img/masonry-portfolio/auto4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Chevrolet Corsa 2000</h4>
-		<p>Potencia: 89 CV</p>
-		<p>Par motor: 125 Nm</p>
-		<p>Peso: 895 kg</p>
-		<p>Velocidad máxima: 182 km/h</p>
-		<p>Aceleración: 10,4 s (0-100 km/h)</p>
-                <a href="assets/img/masonry-portfolio/auto4.jpg" title="" data-gallery="portfolio-gallery-auto" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pista">
-              <img src="assets/img/masonry-portfolio/track1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/track1.jpg" class="img-fluid" alt="Circuito de Imola en Simulador">
               <div class="portfolio-info">
                 <h4>Circuito de Imola</h4>
-                <p>El Autodromo Enzo e Dino Ferrari, conocido comúnmente como Circuito de Imola, es un autódromo de 4,9 km situado en Imola, región de Emilia-Romaña, Italia, unos 30 km al sureste de la ciudad de Bolonia.</p>
-                <a href="assets/img/masonry-portfolio/track1.jpg" title="" data-gallery="portfolio-gallery-pista" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>El Autodromo Enzo e Dino Ferrari, conocido comúnmente como Circuito de Imola, es un autódromo de 4,9
+                  km situado en Imola, región de Emilia-Romaña, Italia, unos 30 km al sureste de la ciudad de Bolonia.
+                </p>
+                <a href="assets/img/masonry-portfolio/track1.jpg" title="Circuito de Imola"
+                  data-gallery="portfolio-gallery-pista" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pista">
-              <img src="assets/img/masonry-portfolio/track2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/track2.jpg" class="img-fluid"
+                alt="Mount Panorama Circuit Bathurst en Simulador">
               <div class="portfolio-info">
                 <h4>Mount Panorama Circuit</h4>
-                <p>También conocido como Bathurst Motor Speedway, es un circuito de carreras de 6.213 metros de extensión situado en Bathurst, Nueva Gales del Sur, Australia.</p>
-                <a href="assets/img/masonry-portfolio/track2.jpg" title="" data-gallery="portfolio-gallery-pista" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>También conocido como Bathurst Motor Speedway, es un circuito de carreras de 6.213 metros de
+                  extensión situado en Bathurst, Nueva Gales del Sur, Australia.</p>
+                <a href="assets/img/masonry-portfolio/track2.jpg" title="Mount Panorama Circuit"
+                  data-gallery="portfolio-gallery-pista" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pista">
-              <img src="assets/img/masonry-portfolio/track3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/track3.jpg" class="img-fluid"
+                alt="Circuito Hungaroring en Simulador">
               <div class="portfolio-info">
                 <h4>Hungaroring</h4>
-                <p>Es un autódromo localizado en Mogyoród, Hungría, a 30 kilómetros del centro de la ciudad de Budapest. La construcción del circuito empezó el 1 de octubre de 1985 y fue terminado en ocho meses.</p>
-                <a href="assets/img/masonry-portfolio/track3.jpg" title="" data-gallery="portfolio-gallery-pista" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>Es un autódromo localizado en Mogyoród, Hungría, a 30 kilómetros del centro de la ciudad de Budapest.
+                  La construcción del circuito empezó el 1 de octubre de 1985 y fue terminado en ocho meses.</p>
+                <a href="assets/img/masonry-portfolio/track3.jpg" title="Circuito de Hungaroring"
+                  data-gallery="portfolio-gallery-pista" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
-			<!--
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pista">
-              <img src="assets/img/masonry-portfolio/track4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Circuito Ficticio</h4>
-                <p>Creado para carreras rapidas y con variedad de pancartas publicitarias.</p>
-                <a href="assets/img/masonry-portfolio/track4.jpg" title="" data-gallery="portfolio-gallery-pista" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-game">
-              <img src="assets/img/masonry-portfolio/game1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/game1.jpg" class="img-fluid"
+                alt="Visión de carrera y realismo en cabina">
               <div class="portfolio-info">
-                <h4>Vision de carrera</h4>
+                <h4>Visión de carrera</h4>
                 <p>Realismo total tras el volante.</p>
-                <a href="assets/img/masonry-portfolio/game1.jpg" title="" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/masonry-portfolio/game1.jpg" title="Visión de cabina"
+                  data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-game">
-              <img src="assets/img/masonry-portfolio/game2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/game2.jpg" class="img-fluid"
+                alt="Efectos climáticos en simulación de lluvia">
               <div class="portfolio-info">
-                <h4>Efectos climaticos</h4>
+                <h4>Efectos climáticos</h4>
                 <p>Si lo deseas, lo podemos poner difícil para los competidores.</p>
-                <a href="assets/img/masonry-portfolio/game2.jpg" title="" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/masonry-portfolio/game2.jpg" title="Efectos climáticos"
+                  data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-game">
-              <img src="assets/img/masonry-portfolio/game3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/game3.jpg" class="img-fluid" alt="Realismo gráfico en simulador">
               <div class="portfolio-info">
                 <h4>Realismo Total</h4>
                 <p>Detalles externos e internos que dejarán impactados a la audiencia.</p>
-                <a href="assets/img/masonry-portfolio/game3.jpg" title="" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/masonry-portfolio/game3.jpg" title="Detalles y acabados gráficos"
+                  data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-
-			<!--
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-game">
-              <img src="assets/img/masonry-portfolio/game4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Drifting</h4>
-                <p>Es una técnica de conducción que implica hacer que el vehículo derrape (sobreviraje) de manera controlada, especialmente en las curvas.</p>
-                <a href="assets/img/masonry-portfolio/game4.jpg" title="" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-			
-			
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-video">
-				<a href="assets/img/masonry-portfolio/video1.mp4" title="" data-gallery="portfolio-gallery-video" class="glightbox preview-link">
-					<img src="assets/img/masonry-portfolio/video1.jpg" class="img-fluid" alt="">
-					<div class="portfolio-info">
-						<h4>Assetto Corsa</h4>
-						<p>Video trailer del simulador de carreras que utilizamos.</p>
-						<i class="bi bi-play-fill">Ver Video</i>
-					</div>
-				</a>
+              <a href="assets/img/masonry-portfolio/video1.mp4" title="Video demostración Assetto Corsa"
+                data-gallery="portfolio-gallery-video" class="glightbox preview-link">
+                <img src="assets/img/masonry-portfolio/video1.jpg" class="img-fluid"
+                  alt="Trailer simulador Assetto Corsa">
+                <div class="portfolio-info">
+                  <h4>Assetto Corsa</h4>
+                  <p>Video trailer del simulador de carreras que utilizamos.</p>
+                  <i class="bi bi-play-fill">Ver Video</i>
+                </div>
+              </a>
             </div><!-- End Portfolio Item -->
-			
-			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-video">
-				<a href="assets/img/masonry-portfolio/video4.mp4" title="" data-gallery="portfolio-gallery-video" class="glightbox preview-link">
-					<img src="assets/img/masonry-portfolio/video4.jpg" class="img-fluid" alt="">
-					<div class="portfolio-info">
-						<h4>Assetto Corsa Rally</h4>
-						<p>Video trailer del simulador de rally que utilizamos.</p>
-						<i class="bi bi-play-fill">Ver Video</i>
-					</div>
-				</a>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-video">
+              <a href="assets/img/masonry-portfolio/video4.mp4" title="Video demostración Assetto Corsa Rally"
+                data-gallery="portfolio-gallery-video" class="glightbox preview-link">
+                <img src="assets/img/masonry-portfolio/video4.jpg" class="img-fluid" alt="Trailer simulador de Rally">
+                <div class="portfolio-info">
+                  <h4>Assetto Corsa Rally</h4>
+                  <p>Video trailer del simulador de rally que utilizamos.</p>
+                  <i class="bi bi-play-fill">Ver Video</i>
+                </div>
+              </a>
             </div>
-			
-			<!-- 
+
+            <!-- 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-video">
 				<a href="assets/img/masonry-portfolio/verstappen_belgian.mp4" title="" data-gallery="portfolio-gallery-video" class="glightbox preview-link">
 					<img src="assets/img/masonry-portfolio/verstappen_belgian.jpg" class="img-fluid" alt="">
@@ -445,18 +453,20 @@
 					</div>
 				</a>
             </div> --><!-- End Portfolio Item -->
-			
+
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-video">
-				<a href="assets/img/masonry-portfolio/video3.mp4" title="" data-gallery="portfolio-gallery-video" class="glightbox preview-link">
-					<img src="assets/img/masonry-portfolio/video3.jpg" class="img-fluid" alt="">
-					<div class="portfolio-info">
-						<h4>Assetto Corsa EVO</h4>
-						<p>Video trailer del simulador de carreras que utilizaremos en un futuro muy cercano.</p>
-						<i class="bi bi-play-fill">Ver Video</i>
-					</div>
-				</a>
+              <a href="assets/img/masonry-portfolio/video3.mp4" title="Video demostración Assetto Corsa EVO"
+                data-gallery="portfolio-gallery-video" class="glightbox preview-link">
+                <img src="assets/img/masonry-portfolio/video3.jpg" class="img-fluid"
+                  alt="Trailer simulador Assetto Corsa EVO">
+                <div class="portfolio-info">
+                  <h4>Assetto Corsa EVO</h4>
+                  <p>Video trailer del simulador de carreras que utilizaremos en un futuro muy cercano.</p>
+                  <i class="bi bi-play-fill">Ver Video</i>
+                </div>
+              </a>
             </div><!-- End Portfolio Item -->
-			
+
           </div><!-- End Portfolio Container -->
 
         </div>
@@ -472,7 +482,8 @@
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Servicio</h2>
-        <p>Transformamos la velocidad en una herramienta de marketing.</br> Descubre cómo nuestras experiencias pueden potenciar tu marca conectandote con el público de manera inmersiva, dinámica y memorable.</p>
+        <p>Transformamos la velocidad en una herramienta de marketing.</br> Descubre cómo nuestras experiencias pueden
+          potenciar tu marca conectandote con el público de manera inmersiva, dinámica y memorable.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -484,7 +495,8 @@
               <div class="icon flex-shrink-0"><i class="bi bi-car-front-fill"></i></div>
               <div>
                 <h4 class="title">Experiencia de simulación de carreras</h4>
-                <p class="description">Respaldados por años de experiencia con marcas reconocidas en Ecuador, ofrecemos simulaciones inmersivas que capturan la esencia del automovilismo real.</p>
+                <p class="description">Respaldados por años de experiencia con marcas reconocidas en Ecuador, ofrecemos
+                  simulaciones inmersivas que capturan la esencia del automovilismo real.</p>
               </div>
             </div>
           </div>
@@ -495,7 +507,9 @@
               <div class="icon flex-shrink-0"><i class="bi bi-rocket-takeoff-fill"></i></div>
               <div>
                 <h4 class="title">Branding impactante para tu marca</h4>
-                <p class="description">Personaliza cada detalle de la exhibición: desde los autos en el simulador hasta la pista. Refuerza utilizando tus herramientas como carpas, pendones, promotoras o cualquier otra herramienta de publicidad que tengas, asegurando que tu marca tenga una presencia visual poderosa.</p>
+                <p class="description">Personaliza cada detalle de la exhibición: desde los autos en el simulador hasta
+                  la pista. Refuerza utilizando tus herramientas como carpas, pendones, promotoras o cualquier otra
+                  herramienta de publicidad que tengas, asegurando que tu marca tenga una presencia visual poderosa.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -505,7 +519,8 @@
               <div class="icon flex-shrink-0"><i class="bi bi-mic-fill"></i></div>
               <div>
                 <h4 class="title">Narración y activación del evento</h4>
-                <p class="description">Presencia de promotoras y un speaker que no solo narra la acción, sino que también interactúa con el público, generando emoción y aumentando la participación.</p>
+                <p class="description">Presencia de promotoras y un speaker que no solo narra la acción, sino que
+                  también interactúa con el público, generando emoción y aumentando la participación.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -515,7 +530,8 @@
               <div class="icon flex-shrink-0"><i class="bi bi-camera-fill"></i></div>
               <div>
                 <h4 class="title">Momentos inolvidables</h4>
-                <p class="description">Capturamos la esencia de la experiencia con fotos y videos de alta calidad, ideales para compartir en redes sociales y potenciar el engagement de tu marca.</p>
+                <p class="description">Capturamos la esencia de la experiencia con fotos y videos de alta calidad,
+                  ideales para compartir en redes sociales y potenciar el engagement de tu marca.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -525,17 +541,19 @@
               <div class="icon flex-shrink-0"><i class="bi bi-calendar2-date-fill"></i></div>
               <div>
                 <h4 class="title">Formatos de competición personalizados</h4>
-                <p class="description">Adaptamos la experiencia según tus necesidades: desde un solo día de acción hasta una competencia extendida durante un fin de semana o una gira nacional.</p>
+                <p class="description">Adaptamos la experiencia según tus necesidades: desde un solo día de acción hasta
+                  una competencia extendida durante un fin de semana o una gira nacional.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
-		  
+
           <div class="col-lg-6 ">
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-trophy-fill"></i></div>
               <div>
                 <h4 class="title">Premiaciones y reconocimiento</h4>
-                <p class="description">Dale a los participantes un recuerdo único: trofeos personalizados, camisetas, gorras o llaveros con el branding del evento que refuerce la conexión con tu marca.</p>
+                <p class="description">Dale a los participantes un recuerdo único: trofeos personalizados, camisetas,
+                  gorras o llaveros con el branding del evento que refuerce la conexión con tu marca.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -552,7 +570,8 @@
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Precios</h2>
-        <p>Descubre nuestras opciones de contratación y potencia tu presencia, con la posibilidad de personalizar cada detalle para que se adapte a tu visión.</p>
+        <p>Descubre nuestras opciones de contratación y potencia tu presencia, con la posibilidad de personalizar cada
+          detalle para que se adapte a tu visión.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -563,32 +582,38 @@
             <div class="pricing-item">
               <h3>Paquete Base</h3>
               <h4><sup>$</sup>130<span> / día</span></h4>
-			  <p>Ideal para activaciones y eventos promocionales con el simulador, garantizando una experiencia impactante en un solo día</p>
+              <p>Ideal para activaciones y eventos promocionales con el simulador, garantizando una experiencia
+                impactante en un solo día</p>
               <ul>
                 <li><i class="bi bi-check"></i> <span>Contratación de 1 día</span></li>
                 <li><i class="bi bi-check"></i> <span>Jornada de 8 horas</span></li>
                 <li><i class="bi bi-check"></i> <span>Simulador de carreras</span></li>
-				<li><i class="bi bi-check"></i> <span>Branding de autos y pistas</span></li>
+                <li><i class="bi bi-check"></i> <span>Branding de autos y pistas</span></li>
                 <li><i class="bi bi-check"></i> <span>Pantalla de espectadores</span></li>
                 <li><i class="bi bi-check"></i> <span>Narradora/Promotora</span></li>
-				<li><i class="bi bi-check"></i> <span>Técnico/Organizador</span></li>
-				<li><i class="bi bi-check"></i> <span>Material multimedia</span></li>
+                <li><i class="bi bi-check"></i> <span>Técnico/Organizador</span></li>
+                <li><i class="bi bi-check"></i> <span>Material multimedia</span></li>
               </ul>
-			  <!--<a href="https://wa.me/+584129175484" target="_blank" class="buy-btn">Escribenos</a>-->
+              <a href="https://wa.me/584128590449?text=%C2%A1Hola!%20Deseo%20cotizar%20el%20Paquete%20Base%20(130$%20por%20d%C3%ADa)%20para%20un%20evento."
+                target="_blank" rel="noopener noreferrer" class="buy-btn"><i class="bi bi-whatsapp me-1"></i> Cotizar
+                Paquete</a>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-4">
             <div class="pricing-item featured">
               <h3>Paquete Premiación</h3>
-              <h4><sup>$</sup>60<span> aproximadamente</span></h4>
-			  <p>Ofrecemos la posibilidad de gestionar la premiación para los participantes, con opciones ajustadas al evento y presupuesto</p>
+              <h4><sup>$</sup>60<span> aprox.</span></h4>
+              <p>Ofrecemos la posibilidad de gestionar la premiación para los participantes, con opciones ajustadas al
+                evento y presupuesto</p>
               <ul>
                 <li><i class="bi bi-check"></i> <span>Medallas para el pódium (1°-2°-3°)</span></li>
                 <li><i class="bi bi-check"></i> <span>Gorra con tu marca</span></li>
                 <li><i class="bi bi-check"></i> <span>Franela estampada con tu marca</span></li>
               </ul>
-			  <!--<a href="https://wa.me/+584129175484" target="_blank" class="buy-btn">Escribenos</a>-->
+              <a href="https://wa.me/584128590449?text=%C2%A1Hola!%20Deseo%20cotizar%20el%20Paquete%20Premiaci%C3%B3n%20para%20un%20evento."
+                target="_blank" rel="noopener noreferrer" class="buy-btn"><i class="bi bi-whatsapp me-1"></i> Cotizar
+                Premiación</a>
             </div>
           </div><!-- End Pricing Item -->
 
@@ -596,14 +621,19 @@
             <div class="pricing-item">
               <h3>Paquete Extendido</h3>
               <h4><sup>%</sup>30<span> de descuento</span></h4>
-			  <p>Aprovecha un descuento por contratación prolongada. Los días adicionales tienen una tarifa reducida a 90$ por día</p>
+              <p>Aprovecha un descuento por contratación prolongada. Los días adicionales tienen una tarifa reducida a
+                90$ por día</p>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Incluye lo mismo del paquete base</span></li>
+                <li><i class="bi bi-check"></i> <span>Incluye todo lo del paquete base</span></li>
+                <li><i class="bi bi-check"></i> <span>Tarifa reducida a 90$ por día adicional</span></li>
+                <li><i class="bi bi-check"></i> <span>Soporte continuo y logística multijornada</span></li>
               </ul>
-			  <!--<a href="https://wa.me/+584129175484" target="_blank" class="buy-btn">Escribenos</a>-->
+              <a href="https://wa.me/584128590449?text=%C2%A1Hola!%20Deseo%20cotizar%20el%20Paquete%20Extendido%20(descuento%20por%20d%C3%ADas%20adicionales)."
+                target="_blank" rel="noopener noreferrer" class="buy-btn"><i class="bi bi-whatsapp me-1"></i> Cotizar
+                Extendido</a>
             </div>
           </div><!-- End Pricing Item -->
-		  
+
         </div>
 
       </div>
@@ -616,7 +646,8 @@
       <!-- Section Title -->
       <div class="container section-title">
         <h2>Preguntas Frecuentes</h2>
-        <p>Aquí encontrarás respuestas a las preguntas más comunes sobre nuestros paquetes y experiencia.</br>Si necesitas más información, estamos disponibles para ajustar cada detalle a tu visión.</p>
+        <p>Aquí encontrarás respuestas a las preguntas más comunes sobre nuestros paquetes y experiencia.</br>Si
+          necesitas más información, estamos disponibles para ajustar cada detalle a tu visión.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -626,61 +657,71 @@
           <div class="col-lg-6">
 
             <div class="faq-container">
-				<div class="faq-item">
-				  <h3>¿Cuánto espacio se necesita para instalar el stand y el simulador?</h3>
-				  <div class="faq-content">
-					<p>Nuestro stand requiere un área mínima de 2x3 metros para la correcta instalación del simulador, la carpa y los elementos promocionales.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Cuánto espacio se necesita para instalar el stand y el simulador?</h3>
+                <div class="faq-content">
+                  <p>Nuestro stand requiere un área mínima de 2x3 metros para la correcta instalación del simulador, la
+                    carpa y los elementos promocionales.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-				<div class="faq-item">
-				  <h3>¿Qué incluye cada paquete y qué servicios adicionales se pueden agregar?</h3>
-				  <div class="faq-content">
-					<p>Todos los paquetes incluyen el simulador, branding, narración del evento y el material multimedia generado. Además, ofrecemos opciones adicionales como premios personalizados y adaptamos la experiencia según las necesidades específicas para garantizar un evento inolvidable para el público.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Qué incluye cada paquete y qué servicios adicionales se pueden agregar?</h3>
+                <div class="faq-content">
+                  <p>Todos los paquetes incluyen el simulador, branding, narración del evento y el material multimedia
+                    generado. Además, ofrecemos opciones adicionales como premios personalizados y adaptamos la
+                    experiencia según las necesidades específicas para garantizar un evento inolvidable para el público.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-				<div class="faq-item">
-				  <h3>¿Es posible personalizar el branding del evento según la identidad de mi marca?</h3>
-				  <div class="faq-content">
-					<p>¡Por supuesto! Personalizamos el auto en el simulador, la pista, pancartas y otros elementos visuales para que tu marca tenga la máxima presencia.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Es posible personalizar el branding del evento según la identidad de mi marca?</h3>
+                <div class="faq-content">
+                  <p>¡Por supuesto! Personalizamos el auto en el simulador, la pista, pancartas y otros elementos
+                    visuales para que tu marca tenga la máxima presencia.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-				<div class="faq-item">
-				  <h3>¿Cuánto tiempo pueden participar los usuarios en el simulador?</h3>
-				  <div class="faq-content">
-					<p>Cada usuario puede competir en tandas de cinco vueltas, con un tiempo total aproximado de cinco minutos por sesión. Sim embargo siempre podemos ajustar a tus necesidades.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Cuánto tiempo pueden participar los usuarios en el simulador?</h3>
+                <div class="faq-content">
+                  <p>Cada usuario puede competir en tandas de cinco vueltas, con un tiempo total aproximado de cinco
+                    minutos por sesión. Sim embargo siempre podemos ajustar a tus necesidades.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-				<div class="faq-item">
-				  <h3>¿Cómo se gestiona la competición y la tabla de tiempos?</h3>
-				  <div class="faq-content">
-					<p>Registramos los tiempos y datos de cada participante. Los mejores pueden ser premiados al final del evento o enfrentarse en una final para un único premio. También existe la posibilidad de una tabla de tiempos acumulativa en una gira nacional. Podemos ajustarnos a cualquier idea.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Cómo se gestiona la competición y la tabla de tiempos?</h3>
+                <div class="faq-content">
+                  <p>Registramos los tiempos y datos de cada participante. Los mejores pueden ser premiados al final del
+                    evento o enfrentarse en una final para un único premio. También existe la posibilidad de una tabla
+                    de tiempos acumulativa en una gira nacional. Podemos ajustarnos a cualquier idea.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-				<div class="faq-item">
-				  <h3>¿Cuáles son los requisitos técnicos para realizar el evento en mi ciudad?</h3>
-				  <div class="faq-content">
-					<p>Solo necesitamos acceso a electricidad estable y un espacio adecuado con los permisos previos para instalar el simulador y la estructura del stand.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Cuáles son los requisitos técnicos para realizar el evento en mi ciudad?</h3>
+                <div class="faq-content">
+                  <p>Solo necesitamos acceso a electricidad estable y un espacio adecuado con los permisos previos para
+                    instalar el simulador y la estructura del stand.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-				<div class="faq-item">
-				  <h3>¿Se pueden contratar más días o modificar la duración del evento?</h3>
-				  <div class="faq-content">
-					<p>Sí, contamos con paquetes flexibles. Puedes contratar un solo día o un evento de fin de semana completo con tarifas ajustadas. Todo lo podemos conversar.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Se pueden contratar más días o modificar la duración del evento?</h3>
+                <div class="faq-content">
+                  <p>Sí, contamos con paquetes flexibles. Puedes contratar un solo día o un evento de fin de semana
+                    completo con tarifas ajustadas. Todo lo podemos conversar.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
             </div>
 
           </div><!-- End Faq Column-->
@@ -689,61 +730,70 @@
 
             <div class="faq-container">
 
-				<div class="faq-item">
-				  <h3>¿Cómo se maneja la producción de fotos y videos para redes sociales?</h3>
-				  <div class="faq-content">
-					<p>Capturamos imágenes y videos de la experiencia y los participantes para que puedas generar contenido promocional de alta calidad en tus redes sociales.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Cómo se maneja la producción de fotos y videos para redes sociales?</h3>
+                <div class="faq-content">
+                  <p>Capturamos imágenes y videos de la experiencia y los participantes para que puedas generar
+                    contenido promocional de alta calidad en tus redes sociales.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-				<div class="faq-item">
-				  <h3>¿Qué pasa si quiero un evento a nivel nacional o en varias ciudades?</h3>
-				  <div class="faq-content">
-					<p>Podemos estructurar una gira en distintas ciudades con tabla de tiempos acumulativa y premiación del mejor competidor al final. Solo necesitamos conversar para afinar detalles.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Qué pasa si quiero un evento a nivel nacional o en varias ciudades?</h3>
+                <div class="faq-content">
+                  <p>Podemos estructurar una gira en distintas ciudades con tabla de tiempos acumulativa y premiación
+                    del mejor competidor al final. Solo necesitamos conversar para afinar detalles.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-				<div class="faq-item">
-				  <h3>¿Cómo se define el ganador en los eventos de competición?</h3>
-				  <div class="faq-content">
-					<p>El ganador se define según el mejor tiempo registrado en la tabla de clasificación. En algunos formatos, los mejores tiempos compiten entre sí en una última ronda.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Cómo se define el ganador en los eventos de competición?</h3>
+                <div class="faq-content">
+                  <p>El ganador se define según el mejor tiempo registrado en la tabla de clasificación. En algunos
+                    formatos, los mejores tiempos compiten entre sí en una última ronda.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-				<div class="faq-item">
-				  <h3>¿Puedo aportar mis productos/servicios como parte del premio?</h3>
-				  <div class="faq-content">
-					<p>Sí, podemos incluir premios personalizados con tu marca para reforzar la experiencia y maximizar el impacto del evento.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Puedo aportar mis productos/servicios como parte del premio?</h3>
+                <div class="faq-content">
+                  <p>Sí, podemos incluir premios personalizados con tu marca para reforzar la experiencia y maximizar el
+                    impacto del evento.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-				<div class="faq-item">
-				  <h3>¿El uso del simulador para el público es gratuito y abierto?</h3>
-				  <div class="faq-content">
-					<p>Nos ajustamos a tu elección. La participación puede ser libre para el público asistente, incentivando la interacción y conexión con la marca patrocinadora, o bien establecer condiciones como la adquisición de servicios/productos en la localidad que otorguen un pase para competir.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿El uso del simulador para el público es gratuito y abierto?</h3>
+                <div class="faq-content">
+                  <p>Nos ajustamos a tu elección. La participación puede ser libre para el público asistente,
+                    incentivando la interacción y conexión con la marca patrocinadora, o bien establecer condiciones
+                    como la adquisición de servicios/productos en la localidad que otorguen un pase para competir.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-				<div class="faq-item">
-				  <h3>¿Puedo pedir que se utilice un auto/pista específica en el simulador?</h3>
-				  <div class="faq-content">
-					<p>Sí, podemos configurar vehículos y pistas específicas o personalizadas dentro de las opciones disponibles en el simulador si así se requiere.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Puedo pedir que se utilice un auto/pista específica en el simulador?</h3>
+                <div class="faq-content">
+                  <p>Sí, podemos configurar vehículos y pistas específicas o personalizadas dentro de las opciones
+                    disponibles en el simulador si así se requiere.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-				<div class="faq-item">
-				  <h3>¿Hay restricciones de algún tipo para utilizar el simulador?</h3>
-				  <div class="faq-content">
-					<p>Las restricciones están relacionadas con seguridad y comodidad del usuario. Se recomienda una edad/estatura mínima y cumplir con condiciones básicas de acceso, que pueden ajustarse según el evento.</p>
-				  </div>
-				  <i class="faq-toggle bi bi-chevron-right"></i>
-				</div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3>¿Hay restricciones de algún tipo para utilizar el simulador?</h3>
+                <div class="faq-content">
+                  <p>Las restricciones están relacionadas con seguridad y comodidad del usuario. Se recomienda una
+                    edad/estatura mínima y cumplir con condiciones básicas de acceso, que pueden ajustarse según el
+                    evento.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
             </div>
 
@@ -760,45 +810,130 @@
 
       <!-- Section Title -->
       <div class="container section-title">
-        <h2>Contactanos</h2>
-        <p>¿Tienes dudas, quieres más información o buscas una propuesta personalizada? Estamos aquí para ayudarte.</br>Escríbenos por cualquiera de nuestros medios y trabajemos juntos para llevar tu evento al siguiente nivel.</p>
+        <h2>Contáctanos</h2>
+        <p>¿Tienes dudas, deseas una cotización formal o buscas una propuesta personalizada para tu
+          marca?</br>Escríbenos por cualquiera de nuestros medios oficiales y aceleremos juntos tu próximo evento.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
-		<!--
-        <div class="mb-4">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
 
-        <div class="row gy-4">
+        <!-- Tarjetas de Información de Contacto -->
+        <div class="row gy-4 mb-5">
           <div class="col-lg-4">
-            <div class="info-item d-flex">
-              <i class="bi bi-whatsapp flex-shrink-0"></i>
+            <div
+              class="info-item d-flex align-items-center p-3 rounded-4 bg-dark border border-secondary border-opacity-25 h-100">
+              <i class="bi bi-whatsapp fs-2 text-danger me-3 flex-shrink-0"></i>
               <div>
-                <h3>WhatsApp</h3>
-                <p><a href="https://wa.me/+584128590449" target="_blank">+58 0412 8590449</a></p>
+                <h3 class="h6 mb-1 text-white">WhatsApp Empresarial</h3>
+                <p class="mb-0"><a href="https://wa.me/584128590449" target="_blank" rel="noopener noreferrer"
+                    class="text-danger fw-bold">+58 0412 8590449</a></p>
+                <small class="text-white-50">Respuesta rápida</small>
               </div>
-            </div><!-- End Info Item -->
-		  </div>
-		  <div class="col-lg-4">
-            <div class="info-item d-flex">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Correo electrónico</h3>
-                <p><a href="mailto:contacto@leandrus.net" target="_blank">contacto@leandrus.net</a></p>
-              </div>
-            </div><!-- End Info Item -->
-		  </div>
-		  <div class="col-lg-4">
-           <div class="info-item d-flex">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Dirección física</h3>
-                <p>Calle 13, entre Av. 20 y Av. 21. Quibor, Lara 3061</p>
-              </div>
-            </div><!-- End Info Item -->
+            </div>
           </div>
 
+          <div class="col-lg-4">
+            <div
+              class="info-item d-flex align-items-center p-3 rounded-4 bg-dark border border-secondary border-opacity-25 h-100">
+              <i class="bi bi-envelope fs-2 text-danger me-3 flex-shrink-0"></i>
+              <div>
+                <h3 class="h6 mb-1 text-white">Correo Electrónico</h3>
+                <p class="mb-0"><a href="mailto:contacto@leandrus.net"
+                    class="text-danger fw-bold">contacto@leandrus.net</a></p>
+                <small class="text-white-50">Cotizaciones y administración</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div
+              class="info-item d-flex align-items-center p-3 rounded-4 bg-dark border border-secondary border-opacity-25 h-100">
+              <i class="bi bi-geo-alt fs-2 text-danger me-3 flex-shrink-0"></i>
+              <div>
+                <h3 class="h6 mb-1 text-white">Ubicación y Cobertura</h3>
+                <p class="mb-0 text-light small">Calle 13, entre Av. 20 y Av. 21. Quíbor, Lara, Venezuela</p>
+                <small class="text-white-50">Cobertura local, regional y nacional</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario de Solicitud de Información con Consentimiento RGPD -->
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="contact-form-wrapper">
+              <div class="text-center mb-4">
+                <h3 class="text-white fw-bold h4"><i class="bi bi-speedometer2 text-danger me-2"></i>Solicita tu
+                  Propuesta Personalizada</h3>
+                <p class="text-white-50 small mb-0">Completa el formulario y te enviaremos la disponibilidad de fechas y
+                  detalles para tu evento.</p>
+              </div>
+
+              <form id="av-contact-form" novalidate>
+                <!-- Honeypot anti-spam para bots (invisible para usuarios humanos) -->
+                <input type="text" name="website_url" id="cf-website-url" class="hp-field" tabindex="-1"
+                  autocomplete="off">
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="cf-name" class="form-label">Nombre Completo *</label>
+                    <input type="text" class="form-control" id="cf-name" placeholder="Ej. Carlos Mendoza" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="cf-email" class="form-label">Correo Electrónico *</label>
+                    <input type="email" class="form-control" id="cf-email" placeholder="correo@empresa.com" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="cf-phone" class="form-label">Teléfono / WhatsApp *</label>
+                    <input type="tel" class="form-control" id="cf-phone" placeholder="+58 412..." required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="cf-service" class="form-label">Paquete o Servicio de Interés</label>
+                    <select class="form-select" id="cf-service">
+                      <option value="Paquete Base ($130/día)" selected>Paquete Base (1 día - $130)</option>
+                      <option value="Paquete Premiación ($60 aprox.)">Paquete Premiación (Medallas, gorras, franelas)
+                      </option>
+                      <option value="Paquete Extendido (Gira / Días adicionales)">Paquete Extendido (Descuento
+                        multijornada)</option>
+                      <option value="Activación Corporativa a Medida">Activación Corporativa a Medida</option>
+                      <option value="Consulta General">Otra consulta</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="cf-message" class="form-label">Detalles del Evento (Fecha tentativa, ciudad o
+                      requerimientos)</label>
+                    <textarea class="form-control" id="cf-message" rows="4"
+                      placeholder="Descríbenos tu evento, lugar, fecha estimada y lo que deseas lograr con tu marca..."></textarea>
+                  </div>
+
+                  <!-- Consentimiento de Privacidad y Tratamiento de Datos -->
+                  <div class="col-12 mt-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="cf-consent" required>
+                      <label class="form-check-label" for="cf-consent">
+                        He leído y acepto la <a href="privacidad.html" target="_blank"
+                          rel="noopener noreferrer">Política de Privacidad</a> y consiento de forma expresa el
+                        tratamiento de mis datos personales para la gestión de esta consulta y cotización. *
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-danger btn-lg px-5 py-3 fw-bold rounded-pill shadow">
+                      <i class="bi bi-send-fill me-2"></i>Enviar Consulta y Conectar por WhatsApp
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Alerta de Respuesta del Formulario -->
+                <div id="cf-status-alert" class="d-none" role="alert"></div>
+              </form>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -807,51 +942,144 @@
 
   </main>
 
+  <!-- Banner de Consentimiento de Cookies (RGPD / ePrivacy) -->
+  <div id="cookie-consent-banner" class="d-none">
+    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-3">
+      <div>
+        <strong class="text-white"><i class="bi bi-shield-lock text-danger me-2"></i>Privacidad y Uso de
+          Cookies</strong>
+        <p class="mb-0">Utilizamos cookies técnicas obligatorias para el correcto funcionamiento del sitio y cookies
+          analíticas para mejorar nuestros servicios si usted lo autoriza. Puede revisar nuestra <a href="cookies.html"
+            target="_blank" rel="noopener noreferrer">Política de Cookies</a>.</p>
+      </div>
+      <div class="cookie-btn-group">
+        <button type="button" class="btn btn-sm btn-outline-light btn-cookie-open-settings">Configurar</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary btn-cookie-reject-all">Rechazar No
+          Esenciales</button>
+        <button type="button" class="btn btn-sm btn-danger fw-bold btn-cookie-accept-all">Aceptar Todas</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Configuración de Cookies -->
+  <div class="modal fade" id="cookieSettingsModal" tabindex="-1" aria-labelledby="cookieSettingsModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-secondary">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title fw-bold" id="cookieSettingsModalLabel"><i
+              class="bi bi-sliders text-danger me-2"></i>Preferencias de Cookies</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-white-50">Seleccione las tecnologías que consiente activar durante su navegación en
+            Aceleración Virtual:</p>
+
+          <div
+            class="d-flex justify-content-between align-items-center p-3 mb-2 rounded bg-black border border-secondary border-opacity-50">
+            <div>
+              <strong class="d-block text-white">Cookies Técnicas (Necesarias)</strong>
+              <small class="text-white-50">Imprescindibles para la seguridad, navegación y recordar sus elecciones de
+                privacidad.</small>
+            </div>
+            <div class="form-check form-switch ms-3">
+              <input class="form-check-input" type="checkbox" checked disabled>
+            </div>
+          </div>
+
+          <div
+            class="d-flex justify-content-between align-items-center p-3 rounded bg-black border border-secondary border-opacity-50">
+            <div>
+              <strong class="d-block text-white">Cookies Analíticas (Opcionales)</strong>
+              <small class="text-white-50">Nos ayudan a cuantificar el tráfico y rendimiento de manera anónima y
+                agregada.</small>
+            </div>
+            <div class="form-check form-switch ms-3">
+              <input class="form-check-input" type="checkbox" id="cookie-analytics-check">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-secondary justify-content-between">
+          <button type="button" class="btn btn-sm btn-outline-secondary btn-cookie-reject-all"
+            data-bs-dismiss="modal">Rechazar Opcionales</button>
+          <button type="button" class="btn btn-sm btn-danger fw-bold" id="btn-cookie-save-custom">Guardar
+            Preferencias</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
   <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
-		<div class="container section-title">
-			<h2>Síguenos en redes sociales</h2>
-			<p>Mantente al día con nuestras novedades, eventos y contenido exclusivo.</br>Síguenos en nuestras redes y sé parte de la experiencia del motorsport virtual.</p>
+      <div class="container section-title text-center">
+        <h2>Síguenos en redes sociales</h2>
+        <p>Mantente al día con nuestras novedades, eventos y contenido exclusivo del motorsport virtual.</p>
 
-		<div class="social-links" style="display: flex !important; justify-content: center; padding-top: 20px;">
-			<a href="https://www.facebook.com/profile.php?id=61576377377395"><i class="bi bi-facebook"></i></a>
-			<a href="https://www.instagram.com/aceleracion_virtual"><i class="bi bi-instagram"></i></a>
-			<a href="https://www.tiktok.com/@aceleracion_virtual"><i class="bi bi-tiktok"></i></a>
-		</div>
-				</div><!-- End Section Title -->
+        <div class="social-links d-flex justify-content-center pt-3 gap-3">
+          <a href="https://www.facebook.com/profile.php?id=61576377377395" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/aceleracion_virtual" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@aceleracion_virtual" target="_blank" rel="noopener noreferrer"
+            aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="https://wa.me/584128590449" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+              class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Aceleración Virtual</strong> <span>Todos los derechos reservados.</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+    <!-- Enlaces Legales y Datos de Negocio -->
+    <div class="container border-top border-secondary border-opacity-25 pt-4 mt-3 text-center">
+      <div class="row g-3 justify-content-center text-white-50 small mb-3">
+        <div class="col-md-auto"><i class="bi bi-geo-alt text-danger me-1"></i> Calle 13, entre Av. 20 y 21. Quíbor,
+          Lara, Venezuela</div>
+        <div class="col-md-auto"><i class="bi bi-telephone text-danger me-1"></i> +58 0412 8590449</div>
+        <div class="col-md-auto"><i class="bi bi-envelope text-danger me-1"></i> info@leandrus.net</div>
+        <div class="col-md-auto"><i class="bi bi-clock text-danger me-1"></i> Lun - Sáb: 8:00 AM - 6:00 PM</div>
+      </div>
+
+      <div class="legal-links mb-3 flex-wrap">
+        <a href="privacidad.html" class="text-secondary mx-2">Política de Privacidad</a> |
+        <a href="terminos.html" class="text-secondary mx-2">Términos y Condiciones</a> |
+        <a href="cookies.html" class="text-secondary mx-2">Política de Cookies</a> |
+        <a href="reembolsos.html" class="text-secondary mx-2">Políticas de Reembolso</a> |
+        <a href="copyright.html" class="text-secondary mx-2">Aviso de Copyright y Marcas</a> |
+        <a href="#" class="text-secondary mx-2 btn-cookie-open-settings">Configurar Cookies</a>
+      </div>
+
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Aceleración Virtual</strong> <span>Todos los derechos
+            reservados.</span></p>
+        <div class="credits text-white-50 small">
+          Diseño web y simulación operada por Aceleración Virtual | Inspirado en Knight por <a
+            href="https://bootstrapmade.com/" target="_blank" rel="noopener noreferrer">BootstrapMade</a>
+        </div>
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-caret-up-fill"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Subir"><i
+      class="bi bi-caret-up-fill"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Main JS, Cookie Manager & Contact Form -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/cookie-consent.js"></script>
+  <script src="assets/js/contact-form.js"></script>
 
 </body>
 

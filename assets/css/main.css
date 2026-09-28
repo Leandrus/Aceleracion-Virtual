@@ -2436,9 +2436,231 @@ table.redTable thead th {
 
 
 #about-rotator {
-  transition: opacity .6s ease;
+  transition: opacity .5s ease-in-out;
   opacity: 1;
 }
 .fade-out {
   opacity: 0;
+}
+
+/*--------------------------------------------------------------
+# Responsividad de Tablas y redTable
+--------------------------------------------------------------*/
+.table-responsive-box {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+table.redTable {
+  border: 1px solid #444;
+  background-color: #121212;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+table.redTable th {
+  background: #d90429;
+  color: #ffffff;
+  padding: 12px 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+table.redTable td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+table.redTable tr:nth-child(even) td {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+table.redTable tr:nth-child(odd) td {
+  background-color: #242424;
+  color: #f1f1f1;
+}
+
+table.redTable tr:hover td {
+  background-color: rgba(217, 4, 41, 0.15);
+}
+
+@media (max-width: 768px) {
+  table.redTable {
+    font-size: 0.82rem;
+  }
+  table.redTable th, table.redTable td {
+    padding: 8px 6px;
+    white-space: nowrap;
+  }
+}
+
+/*--------------------------------------------------------------
+# Cookie Consent Banner & Modal
+--------------------------------------------------------------*/
+#cookie-consent-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 99999;
+  background: rgba(18, 18, 20, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(220, 53, 69, 0.4);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.8), 0 0 20px rgba(220, 53, 69, 0.2);
+  border-radius: 12px;
+  padding: 20px 24px;
+  color: #e0e0e0;
+  animation: slideUpCookie 0.4s ease-out;
+}
+
+@keyframes slideUpCookie {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#cookie-consent-banner p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+  color: #ccc;
+}
+
+#cookie-consent-banner a {
+  color: #ff4d6d;
+  text-decoration: underline;
+}
+
+#cookie-consent-banner a:hover {
+  color: #ffffff;
+}
+
+.cookie-btn-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  #cookie-consent-banner {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 16px;
+  }
+  .cookie-btn-group {
+    width: 100%;
+    margin-top: 12px;
+  }
+  .cookie-btn-group .btn {
+    flex: 1 1 auto;
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Formulario de Contacto & Consentimiento
+--------------------------------------------------------------*/
+.contact-form-wrapper {
+  background: rgba(20, 20, 24, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-bottom: 6px;
+}
+
+.form-control, .form-select {
+  background-color: rgba(10, 10, 12, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: rgba(15, 15, 18, 0.95);
+  border-color: #d90429;
+  box-shadow: 0 0 0 0.25rem rgba(217, 4, 41, 0.25);
+  color: #ffffff;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form-check-input {
+  background-color: #1a1a1a;
+  border-color: #555;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #d90429;
+  border-color: #d90429;
+}
+
+.form-check-label {
+  font-size: 0.85rem;
+  color: #bbb;
+  cursor: pointer;
+}
+
+.form-check-label a {
+  color: #ff4d6d;
+}
+
+.form-check-label a:hover {
+  text-decoration: underline;
+}
+
+/* Honeypot anti-spam field */
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Legal Page Styling */
+.legal-page {
+  background-color: #0b0c10;
+  color: #c5c6c7;
+}
+
+.legal-page h1, .legal-page h2, .legal-page h3, .legal-page h4 {
+  color: #ffffff;
+}
+
+.legal-page p, .legal-page li {
+  line-height: 1.7;
 }

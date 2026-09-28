@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tabla de Tiempos y Posiciones | Aceleración Virtual</title>
+
+  <meta name="description" content="Tabla de clasificación oficial y tiempos en vivo de las competiciones de motorsport de Aceleración Virtual.">
+  <meta name="keywords" content="motorsport, simulación de carreras, tabla de tiempos, clasificación, automovilismo virtual, eventos">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+	
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/logo_av_corto_fnegro.png" alt="Aceleración Virtual">
+        <h1 class="sitename">Aceleración Virtual</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Inicio</a></li>
+          <li><a href="index.html#about">Nosotros</a></li>
+          <li><a href="index.html#services">Servicios</a></li>
+          <li><a href="index.html#pricing">Precios</a></li>
+          <li><a href="index.html#faq">Preguntas</a></li>
+          <li><a href="index.html#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://www.facebook.com/profile.php?id=61576377377395" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/aceleracion_virtual" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com/@aceleracion_virtual" target="_blank" rel="noopener noreferrer" class="tiktok" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Leaderboard Section -->
+    <section id="hero" class="hero section dark-background py-5" style="min-height: 85vh;">
+      <div class="container section-title text-center mt-5 pt-4">
+        <h2 style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">Tabla de Clasificación</h2>
+        <p class="text-white-50">Evento Oficial: <strong>Inv. Líder 2030</strong></p>
+        
+        <div class="mb-4">
+          <img style="max-height: 180px; width: auto; object-fit: cover;"
+               src="assets/img/stand.jpg" 
+               class="img-fluid rounded-4 shadow-lg border border-danger border-opacity-50" 
+               alt="Aceleración Virtual Stand"
+               onerror="this.style.display='none'">
+        </div>
+        
+        <!-- Contenedor Responsivo de la Tabla -->
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div id="tabla_tiempos" class="table-responsive-box">
+                <div class="text-center py-4">
+                  <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Cargando tiempos...</span>
+                  </div>
+                  <p class="mt-2 text-white-50">Sincronizando tiempos en vivo con el servidor...</p>
+                </div>
+              </div>
+              <div class="text-end small text-white-50 mt-2">
+                <i class="bi bi-arrow-repeat me-1"></i> Actualización automática cada 15 segundos
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          // Función de sanitización contra XSS
+          function escapeHtml(text) {
+            if (text === null || text === undefined) return '';
+            const div = document.createElement('div');
+            div.textContent = String(text).trim();
+            return div.innerHTML;
+          }
+
+          async function fetchData() {
+            const container = document.getElementById('tabla_tiempos');
+            const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQX9lvA_CwGtdLXEKCP9IKh0ungfrq93I0NjbYghEM_6HHi6YYgR3HDPOLiVnE3g0u3zHZbk8eek2jI/pub?output=csv';
+
+            try {
+              const response = await fetch(url);
+              if (!response.ok) throw new Error('Error al conectar con la hoja de tiempos');
+              const text = await response.text();
+
+              // Convertir CSV en matriz respetando comillas
+              const rawRows = text.split(/\r?\n/).filter(r => r.trim().length > 0);
+              const rows = rawRows.map(row => 
+                row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g)?.map(cell => cell.replace(/^"|"$/g, '').trim()) || []
+              );
+
+              if (rows.length === 0) {
+                container.innerHTML = '<div class="alert alert-dark text-warning border-secondary">No hay tiempos registrados por el momento.</div>';
+                return;
+              }
+
+              const headers = ["Pos.", ...rows[0]];
+
+              let data = rows.slice(1).map((row, index) => {
+                let obj = { "Pos.": index + 1 };
+                row.forEach((cell, colIndex) => {
+                  obj[headers[colIndex + 1]] = cell;
+                });
+                return obj;
+              });
+
+              let htmlContent = '<table class="redTable table-hover"><thead><tr>';
+              headers.forEach(header => {
+                htmlContent += `<th>${escapeHtml(header)}</th>`;
+              });
+              htmlContent += '</tr></thead><tbody>';
+
+              data.forEach(row => {
+                htmlContent += '<tr>';
+                headers.forEach(header => {
+                  const val = row[header] !== undefined ? row[header] : '';
+                  htmlContent += `<td>${escapeHtml(val)}</td>`;
+                });
+                htmlContent += '</tr>';
+              });
+
+              htmlContent += '</tbody></table>';
+              container.innerHTML = htmlContent;
+            } catch (err) {
+              console.error('Error al cargar datos:', err);
+              // Si falla la red, mantener datos previos o mostrar mensaje elegante
+              if (!container.querySelector('table')) {
+                container.innerHTML = '<div class="alert alert-dark text-danger border-danger">No se pudieron cargar los datos en este momento. Verifique su conexión.</div>';
+              }
+            }
+          }
+
+          document.addEventListener('DOMContentLoaded', () => {
+            fetchData();
+            // Actualización periódica cada 15s para no saturar requests
+            setInterval(fetchData, 15000);
+          });
+        </script>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Banner de Consentimiento de Cookies -->
+  <div id="cookie-consent-banner" class="d-none">
+    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-3">
+      <div>
+        <strong class="text-white"><i class="bi bi-shield-lock text-danger me-2"></i>Privacidad y Cookies</strong>
+        <p class="mb-0">Utilizamos cookies técnicas necesarias y cookies analíticas para mejorar su experiencia. Puede aceptar todas, rechazarlas o configurarlas según sus preferencias. Más información en nuestra <a href="cookies.html">Política de Cookies</a>.</p>
+      </div>
+      <div class="cookie-btn-group">
+        <button type="button" class="btn btn-sm btn-outline-light btn-cookie-open-settings">Configurar</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary btn-cookie-reject-all">Rechazar</button>
+        <button type="button" class="btn btn-sm btn-danger fw-bold btn-cookie-accept-all">Aceptar Todas</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Configuración de Cookies -->
+  <div class="modal fade" id="cookieSettingsModal" tabindex="-1" aria-labelledby="cookieSettingsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-secondary">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title fw-bold" id="cookieSettingsModalLabel"><i class="bi bi-sliders text-danger me-2"></i>Preferencias de Privacidad</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-white-50">Personalice sus preferencias de almacenamiento y analítica:</p>
+          <div class="d-flex justify-content-between align-items-center p-3 mb-2 rounded bg-black border border-secondary border-opacity-50">
+            <div>
+              <strong class="d-block text-white">Cookies Técnicas (Necesarias)</strong>
+              <small class="text-white-50">Imprescindibles para el funcionamiento y seguridad de la página.</small>
+            </div>
+            <div class="form-check form-switch ms-3">
+              <input class="form-check-input" type="checkbox" checked disabled>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center p-3 rounded bg-black border border-secondary border-opacity-50">
+            <div>
+              <strong class="d-block text-white">Cookies Analíticas (Opcionales)</strong>
+              <small class="text-white-50">Miden métricas de tráfico anónimo para mejorar el rendimiento.</small>
+            </div>
+            <div class="form-check form-switch ms-3">
+              <input class="form-check-input" type="checkbox" id="cookie-analytics-check">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-secondary justify-content-between">
+          <button type="button" class="btn btn-sm btn-outline-secondary btn-cookie-reject-all" data-bs-dismiss="modal">Rechazar Opcionales</button>
+          <button type="button" class="btn btn-sm btn-danger fw-bold" id="btn-cookie-save-custom">Guardar Preferencias</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="container section-title text-center">
+        <h2>Síguenos en redes sociales</h2>
+        <p>Mantente al día con nuestras novedades, eventos y contenido exclusivo.</p>
+        <div class="social-links d-flex justify-content-center pt-3 gap-3">
+          <a href="https://www.facebook.com/profile.php?id=61576377377395" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/aceleracion_virtual" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@aceleracion_virtual" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="https://wa.me/584128590449" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enlaces Legales y Datos de Negocio -->
+    <div class="container border-top border-secondary border-opacity-25 pt-4 mt-3 text-center">
+      <div class="row g-3 justify-content-center text-white-50 small mb-3">
+        <div class="col-md-auto"><i class="bi bi-geo-alt text-danger me-1"></i> Calle 13, entre Av. 20 y 21. Quíbor, Lara, Venezuela</div>
+        <div class="col-md-auto"><i class="bi bi-telephone text-danger me-1"></i> +58 0412 8590449</div>
+        <div class="col-md-auto"><i class="bi bi-envelope text-danger me-1"></i> contacto@leandrus.net</div>
+      </div>
+
+      <div class="legal-links mb-3">
+        <a href="privacidad.html" class="text-secondary mx-2">Política de Privacidad</a> | 
+        <a href="terminos.html" class="text-secondary mx-2">Términos y Condiciones</a> | 
+        <a href="cookies.html" class="text-secondary mx-2">Política de Cookies</a> | 
+        <a href="reembolsos.html" class="text-secondary mx-2">Políticas de Reembolso</a> | 
+        <a href="copyright.html" class="text-secondary mx-2">Aviso de Copyright</a> |
+        <a href="#" class="text-secondary mx-2 btn-cookie-open-settings">Configurar Cookies</a>
+      </div>
+
+      <div class="copyright">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Aceleración Virtual</strong> <span>Todos los derechos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-caret-up-fill"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS & Cookie Manager Files -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cookie-consent.js"></script>
+
+</body>
+
+</html>
