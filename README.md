@@ -74,14 +74,14 @@ Los datos de la empresa están plenamente identificados en el sitio web, en los 
 - **Denominación Comercial:** Aceleración Virtual
 - **Titular / Plataforma:** Leandrus Digital / Aceleración Virtual
 - **Sitio Web Oficial:** [https://aceleracion-virtual.leandrus.net](https://aceleracion-virtual.leandrus.net)
-- **Correo Oficial de Contacto:** `contacto@leandrus.net`
+- **Correo Oficial de Contacto:** `info@leandrus.net`
 - **WhatsApp Oficial:** `+58 0412 8590449`
 - **Ubicación Física:** Calle 13, entre Av. 20 y Av. 21. Quíbor, Estado Lara, Código Postal 3061, República Bolivariana de Venezuela.
 - **Horario de Atención:** Lunes a Sábado: 8:00 AM – 6:00 PM.
 
 ### 3. Políticas de Privacidad
 - Documento accesible en [`privacidad.html`](privacidad.html).
-- Especifica el responsable del tratamiento, las categorías de datos recolectados (contacto de empresas, tiempos de participantes en competiciones), bases de legitimación, plazos de conservación y el ejercicio de derechos ARCO (Acceso, Rectificación, Cancelación, Oposición) a través de `contacto@leandrus.net`.
+- Especifica el responsable del tratamiento, las categorías de datos recolectados (contacto de empresas, tiempos de participantes en competiciones), bases de legitimación, plazos de conservación y el ejercicio de derechos ARCO (Acceso, Rectificación, Cancelación, Oposición) a través de `info@leandrus.net`.
 
 ### 4. Gestor y Consentimiento de Cookies
 - Cumplimiento con RGPD (Reglamento General de Protección de Datos de la UE) y normativas ePrivacy.
