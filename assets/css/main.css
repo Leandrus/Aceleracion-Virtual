@@ -2580,75 +2580,144 @@ table.redTable tr:hover td {
 /*--------------------------------------------------------------
 # Formulario de Contacto & Consentimiento
 --------------------------------------------------------------*/
+.contact.section.dark-background {
+  background-color: #08090c;
+}
+
 .contact-form-wrapper {
-  background: rgba(20, 20, 24, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(145deg, #13141a 0%, #0c0d10 100%);
+  border: 1px solid rgba(217, 4, 41, 0.25);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(217, 4, 41, 0.08);
+  position: relative;
 }
 
-.form-label {
-  font-weight: 500;
-  font-size: 0.9rem;
-  color: #e0e0e0;
-  margin-bottom: 6px;
+@media (max-width: 768px) {
+  .contact-form-wrapper {
+    padding: 24px 18px;
+    border-radius: 14px;
+  }
 }
 
-.form-control, .form-select {
-  background-color: rgba(10, 10, 12, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  border-radius: 8px;
-  padding: 12px 14px;
-  font-size: 0.95rem;
-  transition: all 0.25s ease;
+.contact-form-wrapper .form-label {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: #f0f0f0 !important;
+  margin-bottom: 7px;
+  display: inline-block;
 }
 
-.form-control:focus, .form-select:focus {
-  background-color: rgba(15, 15, 18, 0.95);
-  border-color: #d90429;
-  box-shadow: 0 0 0 0.25rem rgba(217, 4, 41, 0.25);
-  color: #ffffff;
+.contact-form-wrapper .form-control,
+.contact-form-wrapper .form-select {
+  background-color: #1a1b22 !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+  padding: 13px 16px !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
+  box-shadow: none !important;
+  transition: all 0.25s ease-in-out !important;
 }
 
-.form-control::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+.contact-form-wrapper .form-control:focus,
+.contact-form-wrapper .form-select:focus {
+  background-color: #21222b !important;
+  border-color: #d90429 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 0.25rem rgba(217, 4, 41, 0.3) !important;
+  outline: none !important;
 }
 
-.form-check-input {
-  background-color: #1a1a1a;
-  border-color: #555;
+.contact-form-wrapper .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.contact-form-wrapper .form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 1rem center !important;
+  background-size: 16px 12px !important;
+  padding-right: 2.5rem !important;
+}
+
+.contact-form-wrapper .form-select option {
+  background-color: #15161b !important;
+  color: #ffffff !important;
+  padding: 10px !important;
+}
+
+.contact-form-wrapper .form-check-input {
+  width: 1.25em;
+  height: 1.25em;
+  margin-top: 0.15em;
+  background-color: #1a1b22 !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.form-check-input:checked {
-  background-color: #d90429;
-  border-color: #d90429;
+.contact-form-wrapper .form-check-input:checked {
+  background-color: #d90429 !important;
+  border-color: #d90429 !important;
 }
 
-.form-check-label {
-  font-size: 0.85rem;
-  color: #bbb;
+.contact-form-wrapper .form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(217, 4, 41, 0.25) !important;
+  border-color: #d90429 !important;
+}
+
+.contact-form-wrapper .form-check-label {
+  font-size: 0.88rem;
+  color: #cccccc !important;
   cursor: pointer;
+  line-height: 1.5;
+  padding-left: 6px;
 }
 
-.form-check-label a {
-  color: #ff4d6d;
-}
-
-.form-check-label a:hover {
+.contact-form-wrapper .form-check-label a {
+  color: #ff4d6d !important;
   text-decoration: underline;
+  font-weight: 500;
+}
+
+.contact-form-wrapper .form-check-label a:hover {
+  color: #ffffff !important;
+}
+
+.contact-form-wrapper button[type="submit"] {
+  background: linear-gradient(135deg, #d90429 0%, #b8001f 100%) !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+  padding: 14px 36px !important;
+  border-radius: 50px !important;
+  box-shadow: 0 8px 24px rgba(217, 4, 41, 0.35) !important;
+  transition: all 0.3s ease !important;
+}
+
+.contact-form-wrapper button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(217, 4, 41, 0.5) !important;
+  background: linear-gradient(135deg, #ef233c 0%, #d90429 100%) !important;
+}
+
+.contact-form-wrapper button[type="submit"]:active {
+  transform: translateY(0);
 }
 
 /* Honeypot anti-spam field */
 .hp-field {
   position: absolute !important;
   left: -9999px !important;
+  top: -9999px !important;
   width: 1px !important;
   height: 1px !important;
   opacity: 0 !important;
   pointer-events: none !important;
+  visibility: hidden !important;
 }
 
 /* Legal Page Styling */

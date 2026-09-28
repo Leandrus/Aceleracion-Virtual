@@ -62,8 +62,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Main CSS File con Versionado para romper caché de navegador/CDN -->
+  <link href="assets/css/main.css?v=20260928-1" rel="stylesheet">
 
   <!-- Datos Estructurados del Negocio (Schema.org / JSON-LD) -->
   <script type="application/ld+json">
@@ -826,7 +826,7 @@
     </section><!-- /Faq Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact section dark-background">
 
       <!-- Section Title -->
       <div class="container section-title">
@@ -849,9 +849,9 @@
               </div>
 
               <form id="av-contact-form" novalidate>
-                <!-- Honeypot anti-spam para bots (invisible para usuarios humanos) -->
+                <!-- Honeypot anti-spam para bots (invisible para usuarios humanos con fallback inline) -->
                 <input type="text" name="website_url" id="cf-website-url" class="hp-field" tabindex="-1"
-                  autocomplete="off">
+                  autocomplete="off" style="display:none !important;" aria-hidden="true">
 
                 <div class="row g-3">
                   <div class="col-md-6">
@@ -1055,10 +1055,10 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Main JS, Cookie Manager & Contact Form -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/cookie-consent.js"></script>
-  <script src="assets/js/contact-form.js"></script>
+  <!-- Main JS, Cookie Manager & Contact Form con Versionado -->
+  <script src="assets/js/main.js?v=20260928-1"></script>
+  <script src="assets/js/cookie-consent.js?v=20260928-1"></script>
+  <script src="assets/js/contact-form.js?v=20260928-1"></script>
 
 </body>
 
