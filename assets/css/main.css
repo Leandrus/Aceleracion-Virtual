@@ -2686,25 +2686,63 @@ table.redTable tr:hover td {
   color: #ffffff !important;
 }
 
-.contact-form-wrapper button[type="submit"] {
+.contact-form-wrapper .req-indicator {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+/* Botones de Envío Diferenciados (WhatsApp y Email) */
+.contact-form-wrapper .btn-whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #1ea952 100%) !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.4px;
+  padding: 14px 28px !important;
+  border-radius: 50px !important;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35) !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form-wrapper .btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.5) !important;
+  background: linear-gradient(135deg, #2ae771 0%, #25D366 100%) !important;
+  color: #ffffff !important;
+}
+
+.contact-form-wrapper .btn-whatsapp:active {
+  transform: translateY(0);
+}
+
+.contact-form-wrapper .btn-email {
   background: linear-gradient(135deg, #d90429 0%, #b8001f 100%) !important;
   border: none !important;
   color: #ffffff !important;
   font-weight: 700 !important;
-  letter-spacing: 0.5px;
-  padding: 14px 36px !important;
+  letter-spacing: 0.4px;
+  padding: 14px 28px !important;
   border-radius: 50px !important;
   box-shadow: 0 8px 24px rgba(217, 4, 41, 0.35) !important;
   transition: all 0.3s ease !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-form-wrapper button[type="submit"]:hover {
+.contact-form-wrapper .btn-email:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 28px rgba(217, 4, 41, 0.5) !important;
   background: linear-gradient(135deg, #ef233c 0%, #d90429 100%) !important;
+  color: #ffffff !important;
 }
 
-.contact-form-wrapper button[type="submit"]:active {
+.contact-form-wrapper .btn-email:active {
   transform: translateY(0);
 }
 

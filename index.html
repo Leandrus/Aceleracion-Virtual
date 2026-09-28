@@ -63,7 +63,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File con Versionado para romper caché de navegador/CDN -->
-  <link href="assets/css/main.css?v=20260928-2" rel="stylesheet">
+  <link href="assets/css/main.css?v=20260928-3" rel="stylesheet">
 
   <!-- Datos Estructurados del Negocio (Schema.org / JSON-LD) -->
   <script type="application/ld+json">
@@ -854,23 +854,15 @@
                   autocomplete="off" style="display:none !important;" aria-hidden="true">
 
                 <div class="row g-3">
+                  <!-- 1) Nombre Completo -->
                   <div class="col-md-6">
                     <label for="cf-name" class="form-label">Nombre Completo *</label>
                     <input type="text" class="form-control" id="cf-name" placeholder="Ej. Carlos Mendoza" required>
                   </div>
 
+                  <!-- 2) Paquete o Servicio de Interés -->
                   <div class="col-md-6">
-                    <label for="cf-email" class="form-label">Correo Electrónico *</label>
-                    <input type="email" class="form-control" id="cf-email" placeholder="correo@empresa.com" required>
-                  </div>
-
-                  <div class="col-md-6">
-                    <label for="cf-phone" class="form-label">Teléfono / WhatsApp *</label>
-                    <input type="tel" class="form-control" id="cf-phone" placeholder="+58 412..." required>
-                  </div>
-
-                  <div class="col-md-6">
-                    <label for="cf-service" class="form-label">Paquete o Servicio de Interés</label>
+                    <label for="cf-service" class="form-label">Paquete o Servicio de Interés *</label>
                     <select class="form-select" id="cf-service">
                       <option value="Paquete Base ($130/día)" selected>Paquete Base (1 día - $130)</option>
                       <option value="Paquete Premiación ($60 aprox.)">Paquete Premiación (Medallas, gorras, franelas)
@@ -882,6 +874,19 @@
                     </select>
                   </div>
 
+                  <!-- 3) Teléfono / WhatsApp -->
+                  <div class="col-md-6">
+                    <label for="cf-phone" class="form-label">Teléfono / WhatsApp <span class="req-indicator" id="phone-req-hint">(Obligatorio para WhatsApp)</span></label>
+                    <input type="tel" class="form-control" id="cf-phone" placeholder="+58 412 1234567">
+                  </div>
+
+                  <!-- 4) Correo Electrónico -->
+                  <div class="col-md-6">
+                    <label for="cf-email" class="form-label">Correo Electrónico <span class="req-indicator" id="email-req-hint">(Obligatorio para Email)</span></label>
+                    <input type="email" class="form-control" id="cf-email" placeholder="correo@empresa.com">
+                  </div>
+
+                  <!-- 5) Detalles del Evento -->
                   <div class="col-12">
                     <label for="cf-message" class="form-label">Detalles del Evento (Fecha tentativa, ciudad o
                       requerimientos)</label>
@@ -901,10 +906,16 @@
                     </div>
                   </div>
 
+                  <!-- Dos Botones de Contacto Separados -->
                   <div class="col-12 text-center mt-4">
-                    <button type="submit" class="btn btn-danger btn-lg px-5 py-3 fw-bold rounded-pill shadow">
-                      <i class="bi bi-send-fill me-2"></i>Enviar Consulta y Conectar por WhatsApp
-                    </button>
+                    <div class="contact-actions-group d-flex flex-column flex-sm-row justify-content-center gap-3">
+                      <button type="button" id="btn-submit-whatsapp" class="btn btn-whatsapp btn-lg px-4 py-3 fw-bold rounded-pill shadow">
+                        <i class="bi bi-whatsapp me-2"></i>Enviar por WhatsApp
+                      </button>
+                      <button type="button" id="btn-submit-email" class="btn btn-email btn-lg px-4 py-3 fw-bold rounded-pill shadow">
+                        <i class="bi bi-envelope-fill me-2"></i>Enviar por Email
+                      </button>
+                    </div>
                   </div>
                 </div>
 
@@ -1056,9 +1067,9 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS, Cookie Manager & Contact Form con Versionado -->
-  <script src="assets/js/main.js?v=20260928-2"></script>
-  <script src="assets/js/cookie-consent.js?v=20260928-2"></script>
-  <script src="assets/js/contact-form.js?v=20260928-2"></script>
+  <script src="assets/js/main.js?v=20260928-3"></script>
+  <script src="assets/js/cookie-consent.js?v=20260928-3"></script>
+  <script src="assets/js/contact-form.js?v=20260928-3"></script>
 
 </body>
 
