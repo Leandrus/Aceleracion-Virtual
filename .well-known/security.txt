@@ -1,0 +1,13 @@
+# ==============================================================================
+# Security Policy - Aceleración Virtual (RFC 9116)
+# https://securitytxt.org/
+# ==============================================================================
+
+Contact: mailto:info@leandrus.net
+Contact: https://wa.me/584128590449
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: es, en
+Canonical: https://aceleracion-virtual.leandrus.net/.well-known/security.txt
+Policy: https://aceleracion-virtual.leandrus.net/privacidad.html
+Acknowledgments: https://aceleracion-virtual.leandrus.net/
+Hiring: https://aceleracion-virtual.leandrus.net/#contact

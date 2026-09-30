@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página de Inicio Principal -->
+  <url>
+    <loc>https://aceleracion-virtual.leandrus.net/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Tabla de Tiempos y Clasificación en Vivo (Leaderboard) -->
+  <url>
+    <loc>https://aceleracion-virtual.leandrus.net/template_datos.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Términos y Condiciones de Servicio -->
+  <url>
+    <loc>https://aceleracion-virtual.leandrus.net/terminos.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Política de Privacidad y Protección de Datos -->
+  <url>
+    <loc>https://aceleracion-virtual.leandrus.net/privacidad.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Políticas de Cancelación y Reembolsos -->
+  <url>
+    <loc>https://aceleracion-virtual.leandrus.net/reembolsos.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Política de Cookies -->
+  <url>
+    <loc>https://aceleracion-virtual.leandrus.net/cookies.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Aviso de Copyright y Propiedad Intelectual -->
+  <url>
+    <loc>https://aceleracion-virtual.leandrus.net/copyright.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

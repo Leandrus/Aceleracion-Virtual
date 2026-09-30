@@ -1,0 +1,36 @@
+{
+  "name": "Aceleración Virtual - Simuladores de Carreras",
+  "short_name": "Aceleración Virtual",
+  "description": "Experiencias de simulación de motorsport profesional, activaciones de marca y torneos en Venezuela.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0c10",
+  "theme_color": "#d90429",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/assets/img/favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/logo_av_corto_fnegro.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "entertainment",
+    "sports",
+    "business"
+  ]
+}

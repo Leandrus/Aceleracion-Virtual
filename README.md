@@ -18,8 +18,9 @@
    - [Consentimiento en Formularios](#8-consentimiento-en-formularios)
    - [Aviso de Copyright y Propiedad Intelectual](#9-aviso-de-copyright-y-propiedad-intelectual)
 4. [Diseño y Responsividad (PC y Móviles)](#-diseño-y-responsividad)
-5. [Guía de Configuración y Mantenimiento](#-guía-de-configuración-y-mantenimiento)
-6. [Instrucciones de Despliegue (GitHub Pages)](#-instrucciones-de-despliegue)
+5. [Estándares Web, Descubrimiento e Integración de IA (SEO, LLMs y Seguridad)](#-estándares-web-descubrimiento-e-integración-de-ia)
+6. [Guía de Configuración y Mantenimiento](#-guía-de-configuración-y-mantenimiento)
+7. [Instrucciones de Despliegue (GitHub Pages)](#-instrucciones-de-despliegue)
 
 ---
 
@@ -38,8 +39,20 @@ Aceleracion-Virtual/
 │
 ├── CNAME                         # Configuración de dominio personalizado (aceleracion-virtual.leandrus.net)
 ├── README.md                     # Documentación técnica y legal completa en español
+├── robots.txt                    # Directivas para rastreadores, bots de IA (GPTBot, ClaudeBot, etc.) y sitemap
+├── sitemap.xml                   # Mapa de URLs canonicales, prioridades y frecuencias de actualización
+├── llms.txt                      # Estándar llms.txt con resumen estructurado para LLMs y motores de IA
+├── llms-full.txt                 # Documentación exhaustiva en Markdown para ingesta profunda de IA
+├── site.webmanifest              # Web App Manifest para PWA y accesos directos móviles
+├── humans.txt                    # Reconocimiento del equipo humano y tecnologías utilizadas
+├── security.txt                  # Divulgación de seguridad en la raíz (compatibilidad legacy)
+│
+├── .well-known/
+│   └── security.txt              # Política oficial de divulgación de seguridad según RFC 9116
+│
 ├── index.html                    # Página de inicio principal (Landing Page)
 ├── template_datos.html           # Tabla de tiempos y clasificación en vivo (Google Sheets)
+├── datos.html                    # Redirección rápida a template_datos.html
 ├── privacidad.html               # Política de Privacidad y Protección de Datos
 ├── terminos.html                 # Términos y Condiciones de Uso y Contratación
 ├── cookies.html                  # Política de Cookies detallada
@@ -139,6 +152,29 @@ Todo el sitio ha sido verificado y adaptado para garantizar una visualización �
   - Carrusel Swiper adaptado dinámicamente según ancho de pantalla.
 - **Pantallas de Escritorio (1200px+):**
   - Presentación a 3 y 4 columnas, animaciones AOS en scroll y visualización en alta definición.
+
+---
+
+## 🤖 Estándares Web, Descubrimiento e Integración de IA
+
+La plataforma incorpora las especificaciones más modernas de descubrimiento web, indexación inteligente para agentes de Inteligencia Artificial (LLMs) y seguridad estándar:
+
+### 1. Rastreo e Indexación (`robots.txt` y `sitemap.xml`)
+- **`robots.txt`:** Configurado para autorizar a motores de búsqueda líderes y a bots de IA generativa (`GPTBot`, `ChatGPT-User`, `ClaudeBot`, `PerplexityBot`, `Google-Extended`, `Applebot-Extended`, `CCBot`). Incluye la directiva de enlace a `sitemap.xml` y exclusión de directorios de dependencias (`/assets/vendor/`).
+- **`sitemap.xml`:** Mapa estructurado bajo el protocolo estándar de Sitemaps con URLs canónicas, frecuencias de cambio estimadas y ponderaciones de prioridad de cada página del portal.
+
+### 2. Soporte Oficial para Modelos de Lenguaje (`llms.txt` y `llms-full.txt`)
+- **`llms.txt`:** Implementación según la especificación abierta [llmstxt.org](https://llmstxt.org/). Proporciona a los agentes de IA un resumen conciso en Markdown sobre Aceleración Virtual, sus servicios, ubicación, canales oficiales y enlaces clave para mejorar la precisión y respuestas de buscadores como ChatGPT Search, Perplexity, Claude y Gemini.
+- **`llms-full.txt`:** Versión exhaustiva que detalla especificaciones de hardware de los simuladores (Force Feedback, cockpits, pantallas), logística para eventos corporativos, requisitos en sitio, paquetes comerciales, políticas de salud/seguridad física y preguntas frecuentes.
+
+### 3. Progressive Web App y Móviles (`site.webmanifest`)
+- Manifiesto JSON con especificaciones de iconos, color de tema (`#d90429`), color de fondo (`#0b0c10`), nombre corto y modo de visualización `standalone` para instalación en dispositivos Android/iOS.
+
+### 4. Divulgación de Seguridad (`.well-known/security.txt` y `security.txt`)
+- Implementación del estándar de seguridad **RFC 9116** (`/.well-known/security.txt`). Permite a investigadores de ciberseguridad y desarrolladores reportar incidencias de forma responsable a través de los canales oficiales. Incluye copia en la raíz para compatibilidad con analizadores heredados.
+
+### 5. Reconocimiento de Equipo y Tecnologías (`humans.txt`)
+- Archivo conforme a la iniciativa [humanstxt.org](http://humanstxt.org/) con la atribución a los desarrolladores, comunidad de simracing y estándares tecnológicos utilizados.
 
 ---
 

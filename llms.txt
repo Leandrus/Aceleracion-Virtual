@@ -1,0 +1,38 @@
+# Aceleración Virtual
+
+> Plataforma y servicio profesional de simulación de carreras (Simracing), activaciones de marca y eventos de motorsport en Venezuela.
+
+Aceleración Virtual transforma la pasión y adrenalina del automovilismo deportivo en una herramienta interactiva de alto impacto publicitario y corporativo. Disponemos de stands móviles equipados con simuladores de cockpit profesionales con Force Feedback, pantallas inmersivas, registro de telemetría y tablas de clasificación en tiempo real sincronizadas con la nube, además de personalización visual de autos y pistas con el branding de las marcas patrocinadoras.
+
+## Enlaces Principales
+- [Inicio / Landing Page](https://aceleracion-virtual.leandrus.net/): Página oficial con descripción de stands, flota de simuladores, paquetes corporativos, galería y contacto.
+- [Tabla de Clasificación en Vivo (Leaderboard)](https://aceleracion-virtual.leandrus.net/template_datos.html): Sistema de visualización de vueltas rápidas, tiempos y posiciones en directo durante eventos y torneos.
+- [Términos y Condiciones](https://aceleracion-virtual.leandrus.net/terminos.html): Normativa de contratación, responsabilidades operativas, requisitos técnicos y seguridad para usuarios de los simuladores.
+- [Políticas de Privacidad](https://aceleracion-virtual.leandrus.net/privacidad.html): Tratamiento de datos de contacto y datos de competición conforme a estándares de privacidad (RGPD / legislación local).
+- [Políticas de Cancelación y Reembolsos](https://aceleracion-virtual.leandrus.net/reembolsos.html): Condiciones de reserva (anticipos), reprogramación por causas climáticas/fuerza mayor y esquemas de reembolso.
+- [Política de Cookies](https://aceleracion-virtual.leandrus.net/cookies.html): Declaración de cookies técnicas y analíticas con consentimiento explícito del visitante.
+- [Aviso de Copyright y Marcas](https://aceleracion-virtual.leandrus.net/copyright.html): Descargo sobre derechos de propiedad intelectual de marcas automovilísticas, circuitos y plataformas de software utilizadas.
+
+## Servicios Ofrecidos
+- **Activaciones de Marca en Eventos:** Instalación de stand interactivo donde el público compite en simuladores, atrayendo tráfico masivo y engagement para la marca.
+- **Branding y Patrocinio Virtual (In-Game):** Personalización gráfica de monoplazas, autos GT, uniformes virtuales y vallas de pista con los colores y logos de la empresa cliente.
+- **Torneos y Competiciones Contrarreloj:** Organización de campeonatos en vivo con tabla de líderes proyectada en pantalla gigante y premios para las mejores vueltas.
+- **Eventos Corporativos y Team Building:** Dinámicas para empresas orientadas al trabajo en equipo, toma de decisiones bajo presión y recreación laboral.
+
+## Datos de la Empresa y Contacto
+- **Organización / Marca:** Aceleración Virtual
+- **Titular:** Leandrus Digital
+- **Sitio Web Oficial:** https://aceleracion-virtual.leandrus.net
+- **Ubicación Física:** Calle 13, entre Av. 20 y Av. 21, Quíbor, Estado Lara, Código Postal 3061, República Bolivariana de Venezuela.
+- **Área de Cobertura:** Quíbor, Barquisimeto, Cabudare, Valencia, Caracas y cobertura en todo el territorio venezolano (sujeto a logística).
+- **Correo Electrónico Oficial:** info@leandrus.net
+- **WhatsApp Oficial / Cotizaciones:** +58 412 8590449 (https://wa.me/584128590449)
+- **Horario de Operaciones y Atención:** Lunes a Sábado de 8:00 AM a 6:00 PM (GMT-4).
+- **Redes Sociales:**
+  - Instagram: https://www.instagram.com/aceleracion_virtual
+  - TikTok: https://www.tiktok.com/@aceleracion_virtual
+  - Facebook: https://www.facebook.com/profile.php?id=61576377377395
+
+## Documentación Completa para LLMs
+Para un desglose exhaustivo de especificaciones técnicas del hardware, plataformas de software, modalidades de contratación, preguntas frecuentes completas y políticas legales detalladas, consulta:
+- [Contexto Exhaustivo para LLMs](https://aceleracion-virtual.leandrus.net/llms-full.txt)

@@ -1,0 +1,16 @@
+/* TEAM */
+  Desarrollo y Dirección: Leandrus Digital
+  Sitio Web: https://leandrus.net
+  Contacto: info@leandrus.net
+  Ubicación: Lara, Venezuela
+
+/* THANKS */
+  A toda la comunidad de Simracing, organizadores de eventos de motorsport
+  y patrocinadores que impulsan el automovilismo virtual en Venezuela.
+
+/* SITE */
+  Última Actualización: 2026/09/30
+  Estándares: HTML5, CSS3, ES6+, W3C Validated, Schema.org LocalBusiness, RFC 9116
+  Componentes: Bootstrap 5, AOS, Swiper, GLightbox, Font Awesome / Bootstrap Icons
+  Compatibilidad IA: robots.txt, sitemap.xml, llms.txt, llms-full.txt
+  Diseño: Tema oscuro Motorsport de alto contraste y diseño adaptable responsive

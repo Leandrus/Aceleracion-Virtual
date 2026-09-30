@@ -1,0 +1,111 @@
+# Aceleración Virtual — Documentación y Contexto Exhaustivo
+
+> Archivo de contexto completo para Modelos de Lenguaje (LLMs), agentes de inteligencia artificial y motores de respuesta automatizada.
+> Dominio Oficial: https://aceleracion-virtual.leandrus.net
+> Fecha de última actualización: 30 de septiembre de 2026.
+
+---
+
+## 1. ¿Qué es Aceleración Virtual?
+
+**Aceleración Virtual** es una iniciativa de entretenimiento tecnológico, marketing experiencial y simulación de automovilismo (Simracing) con base en Venezuela (Lara y cobertura nacional), gestionada por **Leandrus Digital**.
+
+Transformamos la tecnología de simulación de motorsport profesional en un punto de atracción de alto tráfico y engagement para marcas comerciales, eventos corporativos, ferias empresariales, exposiciones y celebraciones privadas.
+
+---
+
+## 2. Servicios Principales
+
+### A. Activaciones de Marca y Stands Publicitarios
+- Instalación de estructuras de simulación (cockpits) en stands de eventos, ferias comerciales o puntos de venta.
+- Atracción constante de público interesado en probar la experiencia de conducción deportiva.
+- Generación de base de datos de participantes o prospectos con consentimiento legal.
+- Integración del personal y promotora(s) con la dinámica de la marca.
+
+### B. Branding In-Game y Personalización Visual
+- Diseño de diseños gráficos ("liveries" o rotulados virtuales) para los automóviles en el simulador con los logos, colores institucionales y eslóganes del cliente.
+- Personalización de vallas publicitarias virtuales a los lados del circuito.
+- Monitores exteriores y pantallas gigantes con banners y logotipos permanentes de los patrocinadores.
+
+### C. Torneos y Desafíos Contrarreloj (Time Attack)
+- Competiciones donde los asistentes intentan marcar la vuelta más rápida en un circuito predefinido.
+- Clasificación automatizada en tiempo real mediante pantalla de telemetría y sincronización web en directo ([Tabla en Vivo](https://aceleracion-virtual.leandrus.net/template_datos.html)).
+- Ceremonia de premiación, entrega de trofeos y certificados para los mejores tiempos del evento.
+
+### D. Eventos Corporativos y Dinámicas de Team Building
+- Jornadas recreativas para empresas enfocadas en fomentar la integración, la superación personal, el manejo del estrés y la sana competencia entre colaboradores.
+
+---
+
+## 3. Especificaciones Técnicas y Equipamiento
+
+- **Simuladores (Cockpits):** Estructuras tubulares rígidas de alta resistencia con asientos de competición tipo butaca envolvente para una postura ergonómica óptima.
+- **Volantes y Motores:** Bases con tecnología Force Feedback de alto torque que replican fielmente la pérdida de tracción, el peso del volante en curvas, el paso por pianos (bordillos) e irregularidades del asfalto.
+- **Pedales:** Conjuntos de pedales de alta precisión con sensación progresiva de frenado para emular la presión hidráulica de un monoplaza o vehículo GT.
+- **Visualización y Pantallas:** Pantallas panorámicas para el piloto con alta tasa de refresco y baja latencia, complementadas con pantallas externas para que el público observe la cámara a bordo y los tiempos.
+- **Plataformas de Simulación:** Simuladores reconocidos de nivel profesional (Assetto Corsa, Automobilista 2, rFactor 2, EA Sports WRC, F1 Series), seleccionados según el perfil del público y del cliente.
+
+---
+
+## 4. Requisitos para la Instalación en Eventos
+
+Para la instalación del stand móvil de Aceleración Virtual en un recinto, se requiere:
+1. **Espacio físico:** Área nivelada mínima recomendada de 3x3 metros para un simulador, o 6x3 metros para configuraciones multi-simulador.
+2. **Suministro eléctrico:** Toma de corriente estándar de 110V/120V con toma de tierra y regulador de voltaje (o disponibilidad de soporte con planta eléctrica según el lugar).
+3. **Protección climática:** Espacio techado o carpa cerrada protegida del sol directo, la lluvia y el polvo excesivo para salvaguardar los equipos electrónicos.
+4. **Conexión a Internet:** Conexión Wi-Fi o datos móviles estable para la sincronización de la tabla de tiempos en la nube hacia la web oficial.
+
+---
+
+## 5. Medidas de Seguridad, Salud y Restricciones de Uso
+
+- **Estatura y Edad Mínima:** Generalmente recomendado para personas a partir de 1.40 m de estatura para alcanzar adecuadamente los pedales y el volante. Menores de edad deben estar bajo supervisión de su representante legal.
+- **Condiciones Médicas Preexistentes:** No recomendado para personas con condiciones cardíacas severas, epilepsia fotosensible o antecedentes de vértigo y mareos graves por movimiento (motion sickness).
+- **Consumo de Sustancias:** No se permite la manipulación de los simuladores bajo el efecto evidente de alcohol o sustancias estupefacientes.
+- **Cuidado del Equipo:** Los participantes deben seguir las instrucciones de los operadores para evitar daños accidentales a los periféricos de alta sensibilidad.
+
+---
+
+## 6. Proceso de Cotización, Contratación y Pagos
+
+1. **Contacto y Asesoría:** El cliente se comunica a través del formulario web o directamente por WhatsApp al `+58 412 8590449`.
+2. **Diseño de la Propuesta:** Se evalúa la fecha, locación, horas de operación requeridas, cantidad de simuladores y nivel de personalización de marca.
+3. **Reserva Formal:** Las fechas se reservan mediante el pago de un anticipo del 50% del valor total acordado.
+4. **Pago del Saldo:** El 50% restante se liquida según lo estipulado en el contrato (generalmente al inicio del montaje en el lugar del evento).
+5. **Métodos de Pago Aceptados:** Pago Móvil, Transferencias bancarias nacionales (Bs.), divisas en efectivo, transferencias digitales y criptomonedas (USDT/Binance Pay) previa confirmación.
+
+---
+
+## 7. Políticas de Cancelación y Reprogramación
+
+- **Reprogramación:** Se permite reprogramar sin costo adicional avisando con al menos 7 días calendario de anticipación, sujeto a disponibilidad en el calendario.
+- **Fuerza Mayor:** En caso de fenómenos meteorológicos adversos, problemas de suministro eléctrico mayor o restricciones gubernamentales que impidan el evento, se acuerda una nueva fecha sin penalización.
+- **Cancelaciones Imputables al Cliente:** Si el cliente cancela unilateralmente con menos de 72 horas previas al evento, el anticipo de reserva no es reembolsable debido a los costos de logística y reserva de equipos.
+
+---
+
+## 8. Preguntas Frecuentes (FAQ)
+
+### ¿Se pueden instalar varios simuladores compitiendo en simultáneo?
+Sí, contamos con configuraciones para carreras en red local (LAN) donde dos o más participantes compiten rueda a rueda en la misma pista.
+
+### ¿A qué ciudades de Venezuela pueden trasladarse?
+Tenemos base en Quíbor, Estado Lara, y realizamos eventos frecuentes en Barquisimeto, Cabudare, Carora, San Felipe, Valencia, Maracay y Caracas. Para otras regiones de Venezuela, se cotizan los gastos de viáticos y flete correspondientes.
+
+### ¿El público necesita experiencia previa en videojuegos o carreras?
+No. Nuestros operadores asisten a cada usuario antes de iniciar, ajustan las ayudas de conducción (asistencia de frenado, control de tracción) según el nivel del usuario y brindan una breve inducción para que cualquier persona disfrute la experiencia.
+
+### ¿Cómo acceden los participantes a la tabla de posiciones?
+Se publica un código QR en el stand del evento que redirige a `https://aceleracion-virtual.leandrus.net/template_datos.html`, donde cualquier persona desde su propio teléfono puede ver los tiempos actualizados en tiempo real.
+
+---
+
+## 9. Datos Oficiales de Contacto
+
+- **Nombre Comercial:** Aceleración Virtual
+- **Entidad Responsable:** Leandrus Digital
+- **Sitio Web Oficial:** https://aceleracion-virtual.leandrus.net
+- **Correo Electrónico:** info@leandrus.net
+- **WhatsApp Oficial:** +58 412 8590449
+- **Dirección Legal:** Calle 13, entre Av. 20 y Av. 21, Quíbor, Estado Lara, Código Postal 3061, República Bolivariana de Venezuela.
+- **Horario de Operación:** Lunes a Sábado de 08:00 a 18:00 (GMT-4).

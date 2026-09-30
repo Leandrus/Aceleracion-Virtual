@@ -1,0 +1,56 @@
+# ==============================================================================
+# Robots.txt - Aceleración Virtual
+# Website: https://aceleracion-virtual.leandrus.net
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Disallow: /assets/vendor/
+
+# ------------------------------------------------------------------------------
+# Rastreadores de Motores de Búsqueda y Modelos de Lenguaje (LLMs / IA)
+# ------------------------------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# ------------------------------------------------------------------------------
+# Contexto estructurado para Asistentes de IA / LLMs (Estándar llms.txt)
+# https://llmstxt.org/
+# ------------------------------------------------------------------------------
+# LLM Context: https://aceleracion-virtual.leandrus.net/llms.txt
+# LLM Full Context: https://aceleracion-virtual.leandrus.net/llms-full.txt
+
+# ------------------------------------------------------------------------------
+# Mapa del Sitio Web (Sitemap)
+# ------------------------------------------------------------------------------
+Sitemap: https://aceleracion-virtual.leandrus.net/sitemap.xml
